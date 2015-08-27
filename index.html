@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
 
@@ -16,6 +16,7 @@
 
     <!-- Custom CSS -->
     <link href="css/business-frontpage.css" rel="stylesheet">
+    <link href="css/scrolling-nav.css" rel="stylesheet">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -26,7 +27,7 @@
 
 </head>
 
-<body>
+<body id="top" data-spy="scroll" data-target=".navbar-fixed-top">
 
     <!-- Navigation -->
     <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
@@ -39,16 +40,16 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="#">Exhibidores Roldan [Logo]</a>
+                <a class="navbar-brand page-scroll" href="#top">EXHIBIDORES ROLDAN</a>
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <div class="collapse navbar-collapse navbar-ex1-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
                     <li>
-                        <a href="#">Acerca de</a>
+                        <a class="page-scroll" href="#acerca">Acerca de</a>
                     </li>
                     <li>
-                        <a href="#">Nuestros Productos</a>
+                        <a class="page-scroll" href="#productos">Nuestros Productos</a>
                     </li>
                     <li>
                         <a href="#">Contactanos</a>
@@ -62,90 +63,138 @@
 
     <!-- Image Background Page Header -->
     <!-- Note: The background image is set within the business-casual.css file. -->
-    <header class="business-header">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="intro-text text-center">
-                        <h1 class="tagline name">Exhibidores <br> Roldan</h1>
-                    </div>
+
+    <!-- Half Page Image Background Carousel Header -->
+    <header id="myCarousel" class="carousel slide">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+        </ol>
+
+        <!-- Wrapper for Slides -->
+        <div class="carousel-inner">
+            <div class="item active">
+                <!-- Set the first background image using inline CSS below. -->
+                <div class="fill" style="background-image:url('http://placehold.it/1900x1080&text=ROLDAN');"></div>
+                <div class="carousel-caption">
+                    <h2>Caption 1</h2>
+                </div>
+            </div>
+            <div class="item">
+                <!-- Set the second background image using inline CSS below. -->
+                <div class="fill" style="background-image:url('http://placehold.it/1900x1080&text=Slide Two');"></div>
+                <div class="carousel-caption">
+                    <h2>Caption 2</h2>
+                </div>
+            </div>
+            <div class="item">
+                <!-- Set the third background image using inline CSS below. -->
+                <div class="fill" style="background-image:url('http://placehold.it/1900x1080&text=Slide Three');"></div>
+                <div class="carousel-caption">
+                    <h2>Caption 3</h2>
                 </div>
             </div>
         </div>
+
+        <!-- Controls -->
+        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left"></span>
+        </a>
+        <a class="right carousel-control" href="#myCarousel" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right"></span>
+        </a>
+
     </header>
 
     <!-- Page Content -->
-    <div class="container">
+    <div id="acerca" class="container">
 
         <hr>
 
-        <div class="row">
-            <div class="col-sm-8">
-                <h2>What We Do</h2>
-                <p>Introduce the visitor to the business using clear, informative text. Use well-targeted keywords within your sentences to make sure search engines can find the business.</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et molestiae similique eligendi reiciendis sunt distinctio odit? Quia, neque, ipsa, adipisci quisquam ullam deserunt accusantium illo iste exercitationem nemo voluptates asperiores.</p>
-                <p>
-                    <a class="btn btn-default btn-lg" href="#">Call to Action &raquo;</a>
-                </p>
-            </div>
-            <div class="col-sm-4">
-                <h2>Contact Us</h2>
-                <address>
-                    <strong>Start Bootstrap</strong>
-                    <br>3481 Melrose Place
-                    <br>Beverly Hills, CA 90210
-                    <br>
-                </address>
-                <address>
-                    <abbr title="Phone">P:</abbr>(123) 456-7890
-                    <br>
-                    <abbr title="Email">E:</abbr> <a href="mailto:#">name@example.com</a>
-                </address>
-            </div>
-        </div>
+        <section class="row">
+            <article class="col-sm-8">
+                <h2>A que nos dedicamos...?</h2>
+                <blockquote>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et molestiae similique eligendi reiciendis sunt distinctio odit?.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et molestiae similique eligendi reiciendis sunt distinctio odit? Quia, neque, ipsa, adipisci quisquam ullam deserunt accusantium illo iste exercitationem nemo voluptates asperiores.</p>
+                    <p>
+                        <a class="btn btn-default btn-lg" href="#">Saber mas... &raquo;</a>
+                    </p>
+                </blockquote>
+            </article>
+            <article class="col-sm-4">
+                <section class="section">
+                    <h2>Visitanos en...</h2>
+                    <address>
+                        <strong>Sucursal D.F.</strong>
+                        <br>Roldan 65-A
+                        <br>Col. Centro Mexico, DF 00001
+                        <br>
+                    </address>
+                    <address>
+                        <abbr title="Phone">Telefono:</abbr>(55) 5491-0458
+                        <br>
+                        <abbr title="Email">Correo:</abbr> <a href="mailto:#">dominio@example.com</a>
+                    </address>
+                </section>
+            </article>
+        </section>
         <!-- /.row -->
 
         <hr>
-
-        <div class="row">
+        <div id="productos"></div>
+        <section class="row">
+            <h2 class="text-center">Conoce de nuestros productos!</h2>
+            <br>
             <div class="col-sm-4">
                 <img class="img-circle img-responsive img-center" src="http://placehold.it/300x300" alt="">
-                <h2>Marketing Box #1</h2>
+                <h3 class="text-center">Producto</h3>
                 <p>These marketing boxes are a great place to put some information. These can contain summaries of what the company does, promotional information, or anything else that is relevant to the company. These will usually be below-the-fold.</p>
             </div>
             <div class="col-sm-4">
                 <img class="img-circle img-responsive img-center" src="http://placehold.it/300x300" alt="">
-                <h2>Marketing Box #2</h2>
+                <h3 class="text-center">Producto</h3>
                 <p>The images are set to be circular and responsive. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.</p>
             </div>
             <div class="col-sm-4">
                 <img class="img-circle img-responsive img-center" src="http://placehold.it/300x300" alt="">
-                <h2>Marketing Box #3</h2>
+                <h3 class="text-center">Producto</h3>
                 <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.</p>
             </div>
-        </div>
+        </section>
         <!-- /.row -->
 
         <hr>
 
         <!-- Footer -->
         <footer>
-            <div class="row">
+            
+            <div class="row text-center">
                 <div class="col-lg-12">
-                    <p>Copyright &copy; Your Website 2014</p>
+                    <p>Copyright &copy; Hecho por Devops 2015</p>
                 </div>
             </div>
             <!-- /.row -->
+
+            <!-- jQuery -->
+            <script src="js/jquery.js"></script>
+
+            <!-- Bootstrap Core JavaScript -->
+            <script src="js/bootstrap.min.js"></script>
+
+            <!-- Scrolling Nav JavaScript -->
+            <script src="js/jquery.easing.min.js"></script>
+            <script src="js/scrolling-nav.js"></script>
+            
+            <!-- Js Slider -->
+            <script src="js/app.js"></script>
+
         </footer>
 
     </div>
     <!-- /.container -->
-
-    <!-- jQuery -->
-    <script src="js/jquery.js"></script>
-
-    <!-- Bootstrap Core JavaScript -->
-    <script src="js/bootstrap.min.js"></script>
 
 </body>
 

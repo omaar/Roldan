@@ -4,13 +4,19 @@
  * For details, see http://www.apache.org/licenses/LICENSE-2.0.
  */
 
-body {
-    padding-top: 50px; /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
+@font-face {
+  font-family: "mexcellent";
+  src: url("../fonts/mexcellent rg.ttf") format("truetype");
+}
+
+html, body {
+    padding-top: 43px; /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
+    height: 100%;
 }
 
 /* Header Image Background - Change the URL below to your image path (example: ../images/background.jpg) */
 
-header .container {
+/*header .container {
     padding-top: 100px;
     padding-bottom: 50px;
 }
@@ -20,17 +26,40 @@ header img {
     margin: 0 auto 20px;
 }
 
-header .intro-text .name {
+header .intro-text .title{
     display: block;
     text-transform: uppercase;
-    //font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
-    font-size: 2em;
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 3em;
     font-weight: 700;
+} DEPRECATE*/
+
+.carousel {
+    height: 80%;
+}
+
+.item,
+.active,
+.carousel-inner {
+    height: 100%;
+}
+
+/* Background images are set within the HTML using inline CSS, not here */
+
+.fill {
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
 }
 
 .business-header {
-    height: 400px;
-    background: url('http://placehold.it/1920x400') center center no-repeat scroll;
+    height: 530px;
+    //background: url('http://placehold.it/1920x400') center center no-repeat scroll;
+    //background-color: #1B2B39;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
@@ -40,7 +69,7 @@ header .intro-text .name {
 /* Customize the text color and shadow color and to optimize text legibility. */
 
 .tagline {
-    text-shadow: 0 0 2px #383838;
+    text-shadow: 0 0 0px #383838;
     color: #383838;
 }
 
@@ -48,6 +77,21 @@ header .intro-text .name {
     margin: 0 auto;
 }
 
+/* Navbar */
+@media(min-width:767px) {
+    .navbar {
+        padding: 10px 0;
+        -webkit-transition: background .5s ease-in-out,padding .5s ease-in-out;
+        -moz-transition: background .5s ease-in-out,padding .5s ease-in-out;
+        transition: background .5s ease-in-out,padding .5s ease-in-out;
+    }
+
+    .top-nav-collapse {
+        padding: 0;
+    }
+}
+
 footer {
     margin: 50px 0;
+    background-color: 
 }
