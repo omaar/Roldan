@@ -62,7 +62,7 @@
 .ms-slide .ms-slide-loading {
 	width: 36px;
 	height: 36px;
-	background: url(common/loading-2.gif) no-repeat center white;
+	background: url( ..img/loading-2.gif) no-repeat center white;
 	border-radius: 60px;
 	box-shadow: 0px 0px 3px rgba(0,0,0,0.2);
 	position: absolute;
@@ -75,8 +75,8 @@
 
 /* grab cursor */
 .ms-def-cursor{cursor:auto !important;}
-.ms-grab-cursor{cursor: url(common/grab.png), move;}
-.ms-grabbing-cursor{cursor: url(common/grabbing.png), move;}
+.ms-grab-cursor{cursor: url( ..img/grab.png), move;}
+.ms-grabbing-cursor{cursor: url( ..img/grabbing.png), move;}
 .ms-ie .ms-grab-cursor{cursor: move;}
 .ms-ie .ms-grabbing-cursor {cursor: move;}
 
@@ -304,7 +304,7 @@
     font-family: sans-serif;
     font-size: 0.75em;
     display: inline-block;
-    background: url(common/video-close-btn.png) no-repeat 0px 3px;
+    background: url( ..img/video-close-btn.png) no-repeat 0px 3px;
     padding-left: 15px;
     height: 15px;
     color: #DBDBDB;
