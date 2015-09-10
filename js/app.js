@@ -9,8 +9,8 @@
 				masterslider_421c.control('scrollbar'  ,{ autohide:true, overVideo:true, dir:'h', inset:true, align:'top', color:'#595959' , margin:10  , width:4 });
 				// slider setup
 				masterslider_421c.setup("MS55dea3316421c", {
-						width           : 800,
-						height          : 480,
+						width           : 1400,
+						height          : 580,
 						minHeight       : 0,
 						space           : 0,
 						start           : 1,
@@ -21,7 +21,7 @@
 						layout          : "fullwidth",
 						wheel           : false,
 						autoplay        : true,
-						instantStartLayers:false,
+						instantStartLayers:true,
 						loop            : true,
 						shuffle         : false,
 						preload         : 0,
@@ -37,7 +37,7 @@
 						autofillTarget  : "",
 						hideLayers      : false,
 						fullscreenMargin: 0,
-						speed           : 20,
+						speed           : 10,
 						dir             : "h",
 						parallaxMode    : 'swipe',
 						view            : "basic"
@@ -93,12 +93,12 @@ function googleMaps(){
 		image: 'https://raw.githubusercontent.com/Cheluber/Cheluber/develop/static/img/marker.png',
 		scrollwheel: false,
 		styles: [{ "featureType": "poi", "elementType": "labels", "stylers": [ { "visibility": "off" } ] },{ "elementType": "geometry.fill",   "stylers": [ { "color": "#424957" } ] },{ "elementType": "labels.text", "stylers": [ { "color": "#ffffff" }, { "weight": 0.1 } ] },{ "elementType": "labels.text.stroke", "stylers": [ { "color": "#000000" }, { "weight": 0.2 }, { "invert_lightness": true } ] },{ "featureType": "water", "stylers": [ { "color": "#445069" } ] },{ "featureType": "road.highway", "elementType": "geometry.stroke" }],
-		zoom: 14,
+		zoom: 17,
 	};
 	var map = new google.maps.Map(document.getElementById('map'), mapOptions);
 
 	var marker = new google.maps.Marker({
-		draggable: true,
+		draggable: false,
 		animation: google.maps.Animation.DROP,
 		position: LatLng,
 		map: map,
