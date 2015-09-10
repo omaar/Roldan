@@ -18,7 +18,8 @@
     <link href="css/business-frontpage.css" rel="stylesheet">
     
     <link href="css/masterslider.css" rel="stylesheet">
-    <link href="css/animate.css" rel="stylesheet">
+    <!-- <link href="css/animate.css" rel="tylesheet"> -->
+    <link href="css/font-awesome.min.css" rel="stylesheet">
     <link href="css/owl.carousel.css" rel="stylesheet">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -51,10 +52,10 @@
                         <a class="page-scroll" href="#productos">Catalogo</a>
                     </li>
                     <li>
-                        <a href="#">CONTACTANOS</a>
+                        <a href="#">Contacto</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#acerca">NOSOTROS</a>
+                        <a class="page-scroll" href="#acerca">Nuestras Sucursales</a>
                     </li>
                 </ul>
             </div>
@@ -68,8 +69,7 @@
     <!-- Half Page Image Background Carousel Header -->
     <header id="myCarousel" class="carousel slide">
         <!-- MasterSlider -->
-        <div id="P_MS55dea3316421c" class="master-slider-parent ms-parent-id-61"  >
-            <div class="overlay"></div>
+        <main id="P_MS55dea3316421c" class="master-slider-parent ms-parent-id-61"  >
             <!-- MasterSlider Main -->
             <div id="MS55dea3316421c" class="master-slider ms-skin-light-6 round-skin" >
                                  
@@ -85,10 +85,10 @@
                     <img class="ms-layer img-circle img-responsive img-center" src="img/s1.jpg" alt="Estante Plateado" style="top: 140px; left: 500px; width: 250px; height: 250px; margin: 0px; padding: 0px; transform-origin: 50% 50% 0px; display: none;" data-effect="back(200|800)" data-duration="1800" data-delay="0" data-hide-effect="rotate(150,tl)">
 
                     <div style="left: 110px; top: 320px;" class="ms-layer button" data-effect="left(50,true)"data-duration="500" data-delay="750" data-ease="easeOutQuad">
-                        <a class="btn btn-default animated bounce" href="#">IR AL CATALOGO...</a>
+                        <a class="btn btn-default animated bounce" href="#">Ir al catalogo...</a>
                     </div>
                     <div style="left: 280px; top: 320px;" class="ms-layer button" data-effect="bottom(50,true)" data-duration="700" data-delay="950" data-ease="easeOutQuad">
-                        <a class="btn btn-primary page-scroll" href="#acerca">ACERCA DE...</a>
+                        <a class="btn btn-primary page-scroll" href="#acerca">Nosotros...</a>
                     </div>
                 </div>
                 <div  class="light-gray ms-slide" data-delay="3" data-fill-mode="fill"  >
@@ -116,7 +116,7 @@
                         <img src="http://www.masterslider.com/wp-content/plugins/masterslider/public/assets/css/blank.gif" alt="" title=""/>
                 <!-- data-src="http://www.pamecim.com/wp-content/themes/rhea/example/bg.jpg" -->
                         <h2 style="width: 456px; left: 110px; top: 110px;" class="dark-color ms-layer" data-effect="top(50,true)" data-duration="700" data-delay="250" data-ease="easeOutQuad">BIENVENIDO!
-                    </h2>
+                        </h2>
 
                     <p style="width: 456px; left: 110px; top: 210px;" class="dark-color ms-layer" data-effect="back(500)" data-duration="700" data-delay="500" data-ease="easeOutQuad">Contamos con una amplia gama de <br>exhibidores de alambre.
                     </p>
@@ -140,7 +140,7 @@
             </div>
             <!-- END MasterSlider Main -->
 
-        </div>
+        </main>
         <!-- END MasterSlider -->
 
     </header>
@@ -164,66 +164,74 @@
 
     <section id="productos" class="container">
         <!-- Projects Row -->
-        <h2 class="text-center"><span class="category-title animated bounce">PRODUCTOS</span></h2>
+
+        <h3 class="text-center"><span class="category-title animated bounce">PRODUCTOS</span></h3>
         <div class="divider"></div>
         <article class="row">
             <div id="owl-carousel">
-                <figure class="portfolio-item">
-                    <a class="" href="#">
-                        <img class="img-responsive img-center item" src="http://demo.posthemes.com/pos_cendo/68-home_default/faded-short-sleeves-tshirt.jpg" alt="">
-                        <span class="label"><i>+</i></span>
+                <figure class="product-item">
+                    <a href="#productModal1" class="product-link" data-toggle="modal">
+                        <span class="label-sale">Nuevo</span>
+                        <span class="circle">Nuevo</span>
+                        <div class="caption">
+                            <div class="caption-content">
+                                <i class="fa fa fa-eye fa-2x"></i>
+                            </div>
+                        </div>
+                        <img src="http://demo.posthemes.com/pos_cendo/53-home_default/blouse.jpg" class="img-responsive img-center" alt="">
                     </a>
-                    <div class="">
-                        <h5>
-                            <span>Item</span>
-                        </h5>
-                        <p>$000.00</p>
-                    </div>
+                    <figcaption class="text-center name">Articulo</figcaption>
                 </figure>
-                <div class="portfolio-item">
-                    <a class="" href="#">
-                        <img class="img-responsive img-center item" src="http://demo.posthemes.com/pos_cendo/68-home_default/faded-short-sleeves-tshirt.jpg" alt="">
+                <figure class="product-item">
+                    <a href="#productModal1" class="product-link" data-toggle="modal">
+                    <span class="circle">Nuevo</span>
+                        <div class="caption">
+                            <div class="caption-content">
+                                <i class="fa fa fa-eye fa-2x"></i>
+                            </div>
+                        </div>
+                        <img src="http://demo.posthemes.com/pos_cendo/27-home_default/blouse.jpg" class="img-responsive img-center" alt="">
                     </a>
-                    <div class="decription">
-                        <h5 class="">
-                            <span>Item</span>
-                        </h5>
-                        <p>$000.00</p>
-                    </div>
-                </div>
-                <div class="portfolio-item">
-                    <a href="#">
-                        <img class="img-responsive img-center item" src="http://demo.posthemes.com/pos_cendo/31-home_default/printed-dress.jpg" alt="">
+                    <figcaption class="text-center name">Articulo</figcaption>
+                </figure>
+                <figure class="product-item">
+                    <a href="#productModal1" class="product-link" data-toggle="modal">
+                    <span class="circle">Nuevo</span>
+                        <div class="caption">
+                            <div class="caption-content">
+                                <i class="fa fa fa-eye fa-2x"></i>
+                            </div>
+                        </div>
+                        <img src="http://demo.posthemes.com/pos_cendo/38-home_default/printed-summer-dress.jpg" class="img-responsive img-center" alt="">
                     </a>
-                    <div class="decription">
-                        <h5>
-                            <span>Item</span>
-                        </h5>
-                        <p>$000.00</p>
-                    </div>
-                </div>
-                <div class="portfolio-item">
-                    <a href="#">
-                        <img class="img-responsive img-center item" src="http://demo.posthemes.com/pos_cendo/35-home_default/printed-dress.jpg" alt="">
+                    <figcaption class="text-center name">Articulo</figcaption>
+                </figure>
+                <figure class="product-item">
+                    <a href="#productModal1" class="product-link" data-toggle="modal">
+                        <span class="label-sale">Nuevo</span>
+                        <span class="circle">Nuevo</span>
+                        <div class="caption">
+                            <div class="caption-content">
+                                <i class="fa ffa fa-eye fa-2x"></i>
+                            </div>
+                        </div>
+                        <img src="http://demo.posthemes.com/pos_cendo/45-home_default/printed-chiffon-dress.jpg" class="img-responsive img-center" alt="">
                     </a>
-                    <div class="decription">
-                        <h5>
-                            <span>Item</span>
-                        </h5>
-                        <p>$000.00</p>
-                    </div>
-                </div>
-                <div class="portfolio-item">
-                    <a class="" href="#">
-                        <img class="img-responsive img-center item" src="http://demo.posthemes.com/pos_cendo/68-home_default/faded-short-sleeves-tshirt.jpg" alt="">
+                    <figcaption class="text-center name">Articulo</figcaption>
+                </figure>
+                <figure class="product-item">
+                    <a href="#productModal1" class="product-link" data-toggle="modal">
+                        <span class="label-sale">Nuevo</span>
+                        <span class="circle">Nuevo</span>
+                        <div class="caption">
+                            <div class="caption-content">
+                                <i class="fa fa fa-eye fa-2x"></i>
+                            </div>
+                        </div>
+                        <img src="http://demo.posthemes.com/pos_cendo/68-home_default/faded-short-sleeves-tshirt.jpg" class="img-responsive img-center" alt="">
                     </a>
-                    <div class="decription">
-                        <h5>
-                            <span>Item</span>
-                        </h5>
-                        <p>$000.00</p>
-                    </div>
-                </div>
+                    <figcaption class="text-center name">Articulo</figcaption>
+                </figure>
             </div>
         </article>
         <!-- /.row -->
@@ -246,22 +254,36 @@
             <section class="section">
                 <div class="divider"></div>
                 <h2>Visitanos en...</h2>
-                <address>
+                <address class="col-xs-12 col-sm-6 col-md-12 col-lg-12">
+                    <i class="fa fa-map-marker fa-2x"></i>
                     <strong>Sucursal D.F.</strong>
                     <br>Roldán 65-A
-                    <br>Col. Centro Mexico, DF 00001
-                    <br>
+                    <br>Col. Centro Mexico, DF,
+                    <br>CP. 00001
+                </address>
+                <address class="col-xs-6 col-sm-6 col-md-12 col-lg-12">
+                    <i class="fa fa-map-marker fa-2x"></i>
+                    <strong>Sucursal Cuernavaca.</strong>
+                    <br>Roldán 65-A
+                    <br>Col. Centro Mexico, DF,
+                    <br>CP. 00001
                 </address>
                 <address>
-                    <abbr title="Phone">Telefono: </abbr> (55) 5491-0458
+                    <abbr title="Phone"><i class="fa fa-phone-square"></i></abbr> (55) 5491-0458
                     <br>
-                    <abbr title="Email">Correo: </abbr><a href="mailto:#"> ventas@roldan.com</a>
+                    <abbr title="Email"><i class="fa fa-envelope"></i> </abbr><a href="mailto:#"> ventas@roldan.com</a>
                 </address>
             </section>
         </article>
     </section>
     <div class="divider"></div>
         <!-- Footer -->
+    <section class="content-section-a">
+        <article id="google-map-btn" class="text-center">
+            <h4>HAZ CLICK PARA VER EL MAPA!</h4>
+        </article>
+        <article id="map"></article>
+    </section>
     <footer>
         <div class="container">
             <div class="row text-left">
@@ -305,6 +327,27 @@
         <!-- /.row -->
     </footer>
 
+    <!-- Modal -->
+    <div class="modal fade" id="productModal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title text-center" id="myModalLabel">Articulo</h4>
+          </div>
+          <div class="modal-body">
+            <div class="row">
+                <figure class="col-sm-5 col-xs-12"><img src="http://demo.posthemes.com/pos_cendo/48-home_default/faded-short-sleeves-tshirt.jpg" alt="" class="img-responsive img-center"></figure>
+            </div>
+          </div>
+          <!-- <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+          </div> -->
+        </div>
+      </div>
+    </div>
+
     <!-- jQuery -->
     <script src="js/jquery.js"></script>
 
@@ -317,6 +360,7 @@
     
     <!-- Js Slider -->
     <script src="js/app.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?v=3" type="text/javascript"></script>
     <script src="js/masterslider.min.js"></script>
     <script src="js/owl.carousel.min.js"></script>
 

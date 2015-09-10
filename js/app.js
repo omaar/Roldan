@@ -55,12 +55,54 @@ $(document).ready(function() {
  
   $("#owl-carousel").owlCarousel({
  
-      //autoPlay: 3000, //Set AutoPlay to 3 seconds
+    autoPlay: 3000, //Set AutoPlay to 3 seconds
+    stopOnHover : true,
  
-      items : 4,
-      itemsDesktop : [1199,3],
-      itemsDesktopSmall : [979,3]
+    items : 4,
+    itemsDesktop : [1199,3],
+    itemsDesktopSmall : [979,3],
+
+    responsive: true,
+	responsiveRefreshRate : 200,
+	responsiveBaseWidth: window,
+
+	// Navigation
+    navigation : false,
+    navigationText : ["prev","next"],
+    rewindNav : true,
+    scrollPerPage : false,
+
+    // CSS Styles
+    baseClass : "owl-carousel",
+    theme : "owl-theme"
  
   });
- 
+  //Toggle Map
+  $('#google-map-btn').click(function(){
+  	$('#map').slideToggle();
+	});
+  //Mapa
+  $('#map').fadeOut();
+  googleMaps();
 });
+
+function googleMaps(){
+	var LatLng = new google.maps.LatLng(19.4272643,-99.1269762);
+	var mapOptions = {
+		center: LatLng,
+		image: 'https://raw.githubusercontent.com/Cheluber/Cheluber/develop/static/img/marker.png',
+		scrollwheel: false,
+		styles: [{ "featureType": "poi", "elementType": "labels", "stylers": [ { "visibility": "off" } ] },{ "elementType": "geometry.fill",   "stylers": [ { "color": "#424957" } ] },{ "elementType": "labels.text", "stylers": [ { "color": "#ffffff" }, { "weight": 0.1 } ] },{ "elementType": "labels.text.stroke", "stylers": [ { "color": "#000000" }, { "weight": 0.2 }, { "invert_lightness": true } ] },{ "featureType": "water", "stylers": [ { "color": "#445069" } ] },{ "featureType": "road.highway", "elementType": "geometry.stroke" }],
+		zoom: 14,
+	};
+	var map = new google.maps.Map(document.getElementById('map'), mapOptions);
+
+	var marker = new google.maps.Marker({
+		draggable: true,
+		animation: google.maps.Animation.DROP,
+		position: LatLng,
+		map: map,
+		icon: mapOptions.image,
+		//title:"Tu estas aqui"
+	});
+};
