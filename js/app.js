@@ -1,59 +1,24 @@
-(function ( $ ) {
-			"use strict";
-
-			$(function () {
-				var masterslider_421c = new MasterSlider();
-
-				// slider controls
-				masterslider_421c.control('arrows'     ,{ autohide:true, overVideo:true  });				masterslider_421c.control('bullets'    ,{ autohide:false, overVideo:true, dir:'h', align:'bottom', space:5 , margin:10  });
-				masterslider_421c.control('scrollbar'  ,{ autohide:true, overVideo:true, dir:'h', inset:true, align:'top', color:'#595959' , margin:10  , width:4 });
-				// slider setup
-				masterslider_421c.setup("MS55dea3316421c", {
-						width           : 1400,
-						height          : 580,
-						minHeight       : 0,
-						space           : 0,
-						start           : 1,
-						grabCursor      : true,
-						swipe           : true,
-						mouse           : true,
-						keyboard        : false,
-						layout          : "fullwidth",
-						wheel           : false,
-						autoplay        : true,
-						instantStartLayers:true,
-						loop            : true,
-						shuffle         : false,
-						preload         : 0,
-						heightLimit     : true,
-						autoHeight      : false,
-						smoothHeight    : true,
-						endPause        : false,
-						overPause       : true,
-						fillMode        : "fill",
-						centerControls  : false,
-						startOnAppear   : false,
-						layersMode      : "center",
-						autofillTarget  : "",
-						hideLayers      : false,
-						fullscreenMargin: 0,
-						speed           : 10,
-						dir             : "h",
-						parallaxMode    : 'swipe',
-						view            : "basic"
-				});
-
-
-				
-				window.masterslider_instances = window.masterslider_instances || [];
-				window.masterslider_instances.push( masterslider_421c );
-			 });
-			
-		})(jQuery);
-
+//Mainh Function
 $(document).ready(function() {
- 
-  $("#owl-carousel").owlCarousel({
+
+	masterSlider();
+
+	owlCarousel();
+
+	//Toggle Map
+	$('#google-map-btn').click(function(){
+		$('#map').slideToggle();
+	});
+	//Oculta Mapa
+	$('#map').fadeOut();
+	googleMaps();
+});
+
+/*******Plugins*******/
+
+//Carousel Config
+function owlCarousel() {
+	$("#owl-carousel").owlCarousel({
  
     autoPlay: 3000, //Set AutoPlay to 3 seconds
     stopOnHover : true,
@@ -77,15 +42,58 @@ $(document).ready(function() {
     theme : "owl-theme"
  
   });
-  //Toggle Map
-  $('#google-map-btn').click(function(){
-  	$('#map').slideToggle();
-	});
-  //Mapa
-  $('#map').fadeOut();
-  googleMaps();
-});
+};
 
+//Master Slider Config
+function masterSlider() {
+	var masterslider_421c = new MasterSlider();
+
+	// slider controls
+	masterslider_421c.control('arrows'     ,{ autohide:true, overVideo:true  });				masterslider_421c.control('bullets'    ,{ autohide:false, overVideo:true, dir:'h', align:'bottom', space:5 , margin:10  });
+	masterslider_421c.control('scrollbar'  ,{ autohide:true, overVideo:true, dir:'h', inset:true, align:'top', color:'#595959' , margin:10  , width:4 });
+	// slider setup
+	masterslider_421c.setup("MS55dea3316421c", {
+			width           : 1400,
+			height          : 580,
+			minHeight       : 0,
+			space           : 0,
+			start           : 1,
+			grabCursor      : true,
+			swipe           : true,
+			mouse           : true,
+			keyboard        : false,
+			layout          : "fullwidth",
+			wheel           : false,
+			autoplay        : true,
+			instantStartLayers:true,
+			loop            : true,
+			shuffle         : false,
+			preload         : 0,
+			heightLimit     : true,
+			autoHeight      : false,
+			smoothHeight    : true,
+			endPause        : false,
+			overPause       : true,
+			fillMode        : "fill",
+			centerControls  : false,
+			startOnAppear   : false,
+			layersMode      : "center",
+			autofillTarget  : "",
+			hideLayers      : false,
+			fullscreenMargin: 0,
+			speed           : 10,
+			dir             : "h",
+			parallaxMode    : 'swipe',
+			view            : "basic"
+	});
+
+
+
+	window.masterslider_instances = window.masterslider_instances || [];
+	window.masterslider_instances.push( masterslider_421c );
+};
+
+//Google Maps Config
 function googleMaps(){
 	var LatLng = new google.maps.LatLng(19.4272643,-99.1269762);
 	var mapOptions = {
