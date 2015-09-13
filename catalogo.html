@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es-MX" ng-app="catologApp">
+<html lang="es-MX" ng-app="catalogApp">
 
 <head>
 
@@ -22,7 +22,7 @@
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom CSS -->
-    <link href="css/business-frontpage.css" rel="stylesheet">
+    <link href="css/front.css" rel="stylesheet">
     
     <link href="css/masterslider.css" rel="stylesheet">
     <!-- <link href="css/animate.css" rel="tylesheet"> -->
@@ -56,7 +56,7 @@
             <div class="collapse navbar-collapse navbar-ex1-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
                     <li>
-                        <a class="page-scroll" href="#productos">Catalogo</a>
+                        <a class="page-scroll" href="#">Catalogo</a>
                     </li>
                     <li>
                         <a href="#">Contacto</a>
@@ -79,24 +79,31 @@
 
         <div class="row">
 
-            <div class="col-md-3 bold">
+            <div class="col-md-3 bold" ng-controller="catalogoController as catalogList">
                 <h3 class="lead">Categorias</h3>
-                <ul class="list-group">
-                  <li class="list-group-item">
+                <!-- <div class="panel-group" role="tablist">
+                    <div class="panel panel-default">
+                      <div class="panel-heading" role="tab" id="collapseListGroupHeading1">
+                        <h4 class="panel-title">
+                          <a class="collapsed" role="button" data-toggle="collapse" href="#collapseListGroup1" aria-expanded="false" aria-controls="collapseListGroup1">
+                            Collapsible list group
+                          </a>
+                        </h4>
+                      </div>
+                      <div id="collapseListGroup1" class="panel-collapse collapse" role="tabpanel" aria-labelledby="collapseListGroupHeading1" aria-expanded="false" style="height: 0px;">
+                        <ul class="list-group">
+                          <li class="list-group-item">Bootply</li>
+                          <li class="list-group-item">One itmus ac facilin</li>
+                          <li class="list-group-item">Second eros</li>
+                        </ul>
+                        <div class="panel-footer">Footer</div>
+                      </div>
+                    </div>
+                </div> -->
+                <ul class="list-group" ng-repeat="data in catalogList">
+                  <li class="list-group-item upper" ng-repeat="(key,value) in data">
                     <span class="badge">17</span>
-                    Alambre
-                  </li>
-                  <li class="list-group-item">
-                    <span class="badge">3</span>
-                    Unicel
-                  </li>
-                  <li class="list-group-item">
-                    <span class="badge">10</span>
-                    Acrílico
-                  </li>
-                  <li class="list-group-item">
-                    <span class="badge">4</span>
-                    Terciopelo
+                    {{key}}
                   </li>
                 </ul>
             </div>
@@ -107,7 +114,7 @@
 
                     <div class="col-md-12">
                         <ol class="breadcrumb">
-                          <li><a href="#">Inicio</a></li>
+                          <li><a href="/">Inicio</a></li>
                           <li class="active">Catalogo</li>
                         </ol>
                     </div>
@@ -116,12 +123,12 @@
 
                 <div class="row" ng-controller="catalogoController as catalogList">
 
-                    <figure class="col-sm-3 col-lg-3 col-md-3" ng-repeat="item in catalogList.catalogo">
+                    <figure class="col-sm-3 col-lg-3 col-md-3" ng-repeat="item in catalogList.catalogo.alambre">
                         <div class="thumbnail">
                             <a href="#Modal{{item.id}}" data-toggle="modal"><img src="{{item.img}}" class="img-responsive img-center" alt="{{item.alt}}">
                             </a>
                                 <figurecaption class="text-center">
-                                    <h4>{{item.nombre}}</h4>
+                                    <h5 class="name">{{item.nombre}}</h5>
                                 </figurecaption>
                         </div>
                     </figure>
@@ -179,7 +186,7 @@
     </footer>
     <div ng-controller="catalogoController as catalogList">
         <!-- Modal Template -->
-        <div class="modal fade" id="Modal{{item.id}}" tabindex="-1" role="dialog" aria-labelledby="Label1" ng-repeat="item in catalogList.catalogo">
+        <div class="modal fade" id="Modal{{item.id}}" tabindex="-1" role="dialog" aria-labelledby="Label1" ng-repeat="item in catalogList.catalogo.alambre">
           <div class="modal-dialog" role="document">
             <div class="modal-content">
               <div class="modal-header">
@@ -220,7 +227,8 @@
     <script src="js/masterslider.min.js" type="text/javascript"></script>
     <script src="js/owl.carousel.min.js" type="text/javascript"></script>-->
 
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js" type="text/javascript"></script>
+    <!--<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js" type="text/javascript"></script>-->
+    <script src="js/angular.min.js" type="text/javascript"></script>
     <script src="js/catalogo.js" type="text/javascript"></script>
 
 </body>
