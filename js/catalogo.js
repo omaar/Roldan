@@ -23,7 +23,7 @@ angular.module('catalogApp', [])
 		        "id":"PortaLentes",
 		        "nombre":"Porta Lentes",
 		        "descripcion":"",
-		        "img":"http://demo.posthemes.com/pos_cendo/28-cart_default/blouse.jpg",
+		        "img":"http://demo.posthemes.com/pos_cendo/53-home_default/blouse.jpg",
 		        "alt":"Porta Lentes Alambre",
 		        "medidas":"2, 3, 4, 5, 6"
 		     },
@@ -143,7 +143,7 @@ angular.module('catalogApp', [])
 		        "id":"ArañaDePiso",
 		        "nombre":"Araña de piso",
 		        "descripcion":"",
-		        "img":"http://demo.posthemes.com/pos_cendo/28-cart_default/blouse.jpg",
+		        "img":"http://demo.posthemes.com/pos_cendo/53-home_default/blouse.jpg",
 		        "alt":"Araña de piso",
 		        "medidas":"2, 3, 4, 5, 6"
 		     },

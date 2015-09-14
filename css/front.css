@@ -322,6 +322,33 @@ a:hover, a:focus {
 
 .upper {
     text-transform: capitalize;
+    color: #595959;
+}
+
+.list-group-item {
+    border: .5px solid #FFF;
+}
+
+.panel-group .panel {
+    border-radius: 2px;
+    background-color: #f7f7f7;
+}
+
+.panel-default>.panel-heading {
+    color: #333333;
+    background-color: #f5f5f5;
+    border-color: #dddddd;
+}
+
+.item {
+    font-weight: 400;
+    font-size: 14px;
+    padding-left: 45px;
+    text-transform: capitalize;
+}
+
+.img-owl {
+    height: 250px;
 }
 
 footer, footer a {
