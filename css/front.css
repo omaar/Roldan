@@ -119,6 +119,7 @@ a:hover, a:focus {
     width: 80px;
     height: 80px;
     margin: 0 auto;
+    //opacity: .80;
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
     -ms-border-radius: 50%;
@@ -326,11 +327,19 @@ a:hover, a:focus {
 }
 
 .list-group-item {
-    border: .5px solid #FFF;
+    border: 0px solid #FFF;
+    color: #555;
+}
+
+.list-group-item:hover, .list-group-item:focus {
+    text-decoration: none;
+    background-color: #f5f5f5;
+    color: #7FB4E3;
+    cursor: pointer;
 }
 
 .panel-group .panel {
-    border-radius: 2px;
+    border-radius: 1px;
     background-color: #f7f7f7;
 }
 
@@ -351,6 +360,11 @@ a:hover, a:focus {
     height: 250px;
 }
 
+.img-modal {
+    width: 750px;
+    height: auto;
+}
+
 footer, footer a {
     padding: 50px 0;
     background-color: #EBEBEB;
@@ -368,7 +382,12 @@ footer, footer a {
 }
 
 .thumbnail {
-    border-radius: 2.5px;
+    border-radius: 1px;
+}
+
+.art {
+    background-color: #595959;
+    border-radius: 3px;
 }
 
 .white-text {

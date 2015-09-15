@@ -1,13 +1,14 @@
 angular.module('catalogApp', [])
 	.controller('catalogoController', function(){
 		var catalogList = this;
+		
 		catalogList.catalogo = {
 		  "alambre":[  
 		     {  
 		        "id":"Papelero",
 		        "nombre":"Papelero",
 		        "descripcion":"",
-		        "img":"http://demo.posthemes.com/pos_cendo/53-home_default/blouse.jpg",
+		        "img":"../img/catalogo/alambre/25.png",
 		        "alt":"Papelero alambre",
 		        "medidas":"2, 3, 4, 5, 6"
 		     },
@@ -15,7 +16,7 @@ angular.module('catalogApp', [])
 		        "id":"Tarjetero",
 		        "nombre":"Tarjetero",
 		        "descripcion":"",
-		        "img":"http://demo.posthemes.com/pos_cendo/53-home_default/blouse.jpg",
+		        "img":"../img/catalogo/alambre/26.png",
 		        "alt":"Tarjetero alambre",
 		        "medidas":"2, 3, 4, 5, 6"
 		     },
@@ -23,7 +24,7 @@ angular.module('catalogApp', [])
 		        "id":"PortaLentes",
 		        "nombre":"Porta Lentes",
 		        "descripcion":"",
-		        "img":"http://demo.posthemes.com/pos_cendo/53-home_default/blouse.jpg",
+		        "img":"../img/catalogo/alambre/32.png",
 		        "alt":"Porta Lentes Alambre",
 		        "medidas":"2, 3, 4, 5, 6"
 		     },
@@ -31,7 +32,7 @@ angular.module('catalogApp', [])
 		        "id":"Canastilla",
 		        "nombre":"Canastilla",
 		        "descripcion":"",
-		        "img":"http://demo.posthemes.com/pos_cendo/53-home_default/blouse.jpg",
+		        "img":"../img/catalogo/alambre/42.png",
 		        "alt":"Canastilla Alambre",
 		        "medidas":"2, 3, 4, 5, 6"
 		     },
@@ -39,7 +40,7 @@ angular.module('catalogApp', [])
 		        "id":"Mensula",
 		        "nombre":"Mensula",
 		        "descripcion":"",
-		        "img":"http://demo.posthemes.com/pos_cendo/53-home_default/blouse.jpg",
+		        "img":"../img/catalogo/alambre/43.png",
 		        "alt":"Mensula Alambre",
 		        "medidas":"2, 3, 4, 5, 6"
 		     },
@@ -47,7 +48,7 @@ angular.module('catalogApp', [])
 		        "id":"GanchoenNiveles",
 		        "nombre":"Gancho en Niveles",
 		        "descripcion":"",
-		        "img":"http://demo.posthemes.com/pos_cendo/53-home_default/blouse.jpg",
+		        "img":"../img/catalogo/alambre/44.png",
 		        "alt":"Gancho en Niveles",
 		        "medidas":"2, 3, 4, 5, 6"
 		     },
@@ -55,7 +56,7 @@ angular.module('catalogApp', [])
 		        "id":"Dulcero",
 		        "nombre":"Dulcero",
 		        "descripcion":"",
-		        "img":"http://demo.posthemes.com/pos_cendo/53-home_default/blouse.jpg",
+		        "img":"../img/catalogo/alambre/",
 		        "alt":"Dulcero",
 		        "medidas":"2, 3, 4, 5, 6"
 		     },
@@ -63,7 +64,7 @@ angular.module('catalogApp', [])
 		        "id":"Barnicero",
 		        "nombre":"Barnicero",
 		        "descripcion":"",
-		        "img":"http://demo.posthemes.com/pos_cendo/53-home_default/blouse.jpg",
+		        "img":"../img/catalogo/alambre/",
 		        "alt":"Barnicero",
 		        "medidas":"2, 3, 4, 5, 6"
 		     },
@@ -71,7 +72,7 @@ angular.module('catalogApp', [])
 		        "id":"BarniceroCombinado",
 		        "nombre":"Barnicero Combinado",
 		        "descripcion":"",
-		        "img":"http://demo.posthemes.com/pos_cendo/53-home_default/blouse.jpg",
+		        "img":"../img/catalogo/alambre/",
 		        "alt":"Barnicero Combinado",
 		        "medidas":"2, 3, 4, 5, 6"
 		     },
@@ -79,7 +80,7 @@ angular.module('catalogApp', [])
 		        "id":"Aretero",
 		        "nombre":"Aretero",
 		        "descripcion":"",
-		        "img":"http://demo.posthemes.com/pos_cendo/53-home_default/blouse.jpg",
+		        "img":"../img/catalogo/alambre/",
 		        "alt":"Aretero",
 		        "medidas":"2, 3, 4, 5, 6"
 		     },
@@ -87,7 +88,7 @@ angular.module('catalogApp', [])
 		        "id":"PortaLapizlabial",
 		        "nombre":"Porta lápiz labial",
 		        "descripcion":"",
-		        "img":"http://demo.posthemes.com/pos_cendo/53-home_default/blouse.jpg",
+		        "img":"../img/catalogo/alambre/",
 		        "alt":"Porta lápiz labial",
 		        "medidas":"2, 3, 4, 5, 6"
 		     },
@@ -95,7 +96,7 @@ angular.module('catalogApp', [])
 		        "id":"Botanero",
 		        "nombre":"Botanero",
 		        "descripcion":"",
-		        "img":"http://demo.posthemes.com/pos_cendo/53-home_default/blouse.jpg",
+		        "img":"../img/catalogo/alambre/",
 		        "alt":"Botanero",
 		        "medidas":"2, 3, 4, 5, 6"
 		     },
@@ -103,7 +104,7 @@ angular.module('catalogApp', [])
 		        "id":"PortaCartulina",
 		        "nombre":"Porta cartulina",
 		        "descripcion":"",
-		        "img":"http://demo.posthemes.com/pos_cendo/53-home_default/blouse.jpg",
+		        "img":"../img/catalogo/alambre/",
 		        "alt":"Porta cartulina",
 		        "medidas":"2, 3, 4, 5, 6"
 		     },
@@ -111,7 +112,7 @@ angular.module('catalogApp', [])
 		        "id":"Botadero",
 		        "nombre":"Botadero",
 		        "descripcion":"",
-		        "img":"http://demo.posthemes.com/pos_cendo/53-home_default/blouse.jpg",
+		        "img":"../img/catalogo/alambre/",
 		        "alt":"Botadero",
 		        "medidas":"2, 3, 4, 5, 6"
 		     },
@@ -119,7 +120,7 @@ angular.module('catalogApp', [])
 		        "id":"Esquinero",
 		        "nombre":"Esquinero",
 		        "descripcion":"",
-		        "img":"http://demo.posthemes.com/pos_cendo/53-home_default/blouse.jpg",
+		        "img":"../img/catalogo/alambre/",
 		        "alt":"Esquinero",
 		        "medidas":"2, 3, 4, 5, 6"
 		     },
@@ -127,7 +128,7 @@ angular.module('catalogApp', [])
 		        "id":"PortaRopa",
 		        "nombre":"Porta ropa",
 		        "descripcion":"",
-		        "img":"http://demo.posthemes.com/pos_cendo/53-home_default/blouse.jpg",
+		        "img":"../img/catalogo/alambre/",
 		        "alt":"Porta ropa",
 		        "medidas":"2, 3, 4, 5, 6"
 		     },
@@ -135,7 +136,7 @@ angular.module('catalogApp', [])
 		        "id":"PortaFlores",
 		        "nombre":"Porta flores",
 		        "descripcion":"",
-		        "img":"http://demo.posthemes.com/pos_cendo/53-home_default/blouse.jpg",
+		        "img":"../img/catalogo/alambre/",
 		        "alt":"Porta flores",
 		        "medidas":"2, 3, 4, 5, 6"
 		     },
@@ -143,7 +144,7 @@ angular.module('catalogApp', [])
 		        "id":"ArañaDePiso",
 		        "nombre":"Araña de piso",
 		        "descripcion":"",
-		        "img":"http://demo.posthemes.com/pos_cendo/53-home_default/blouse.jpg",
+		        "img":"../img/catalogo/alambre/",
 		        "alt":"Araña de piso",
 		        "medidas":"2, 3, 4, 5, 6"
 		     },
@@ -151,7 +152,7 @@ angular.module('catalogApp', [])
 		        "id":"PortaPinturas",
 		        "nombre":"Porta pinturas",
 		        "descripcion":"",
-		        "img":"http://demo.posthemes.com/pos_cendo/53-home_default/blouse.jpg",
+		        "img":"../img/catalogo/alambre/48.jpg",
 		        "alt":"Porta pinturas",
 		        "medidas":"2, 3, 4, 5, 6"
 		     }
