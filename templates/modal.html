@@ -1,0 +1,13 @@
+<div class="modal-header">
+  <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><i class="fa fa-times"></i></span></button>
+  <h4 class="modal-title text-center" id="lbl{{catalogList.id}}">{{catalogList.nombre}}</h4>
+</div>
+<div class="modal-body">
+  <div class="row">
+      <figure class="col-md-10">
+          <img src="{{catalogList.img}}" alt="{{catalogList.alt}}" class="img-responsive img-center img-modal">
+      </figure>
+      <p class="col-md-offset-4">{{catalogList.descripcion}}</p>
+      <span>Medidas: {{catalogList.medidas}}</span>
+  </div>
+</div>

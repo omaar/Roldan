@@ -1,7 +1,11 @@
-angular.module('catalogApp', [])
-	.controller('catalogoController', function(){
+angular.module('catalogApp', ['ui.bootstrap'])
+	.controller('catalogoController', MainCtrl);
+
+	MainCtrl.$inject = ['$modal'];
+	function MainCtrl($modal){
 		var catalogList = this;
-		
+
+		catalogList.deleteModal = deleteModal;
 		catalogList.catalogo = {
 		  "alambre":[  
 		     {  
@@ -275,5 +279,29 @@ angular.module('catalogApp', [])
 		        "medidas":"2, 3, 4, 5, 6"
 		     }
 		  ]
+		};
+
+		function deleteModal(categoria) {
+		    $modal.open({
+		      templateUrl: 'templates/modal.html',
+		      controller: ['$modalInstance', 'catalogo', 'categoria', DeleteModalCtrl],
+		      controllerAs: 'catalogList',
+		      resolve: {
+		        catalogo: function () { return catalogList.catalogo },
+		        categoria: function() { return categoria; }
+		    }
+		  });
 		}
-	});
+	}
+
+	function DeleteModalCtrl($modalInstance, catalogo, categoria) {
+	  var catalogList = this;
+	  
+	  catalogList.categoria = categoria;
+	  catalogList.catalogo = catalogo;
+	  
+	  // function deletePerson() {
+	  //    //people.splice(people.indexOf(person), 1);
+	  //    $modalInstance.close();
+	  //  }
+	}

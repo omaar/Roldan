@@ -248,6 +248,14 @@ a:hover, a:focus {
     zoom: 1;
 }
 
+.blur {
+    -ms-filter: blur(1px);
+    -webkit-filter: blur(1px);
+    -moz-filter: blur(1px);
+    -o-filter: blur(1px);
+    filter: blur(1px);
+}
+
 #page-header {
     width: 100%;
     background: #fff;
