@@ -1,12 +1,7 @@
-angular.module('catalogApp', ['ui.bootstrap'])
-	.controller('catalogoController', MainCtrl);
-
-	MainCtrl.$inject = ['$modal'];
-	function MainCtrl($modal){
-		var catalogList = this;
-
-		catalogList.deleteModal = deleteModal;
-		catalogList.catalogo = {
+angular.module('catalogApp', ['ui.bootstrap']);
+angular.module('catalogApp').controller('catalogoController', function ($scope, $modal, $log) {
+  
+  $scope.catalogo = {
 		  "alambre":[  
 		     {  
 		        "id":"Papelero",
@@ -207,7 +202,7 @@ angular.module('catalogApp', ['ui.bootstrap'])
 		        "medidas":"2, 3, 4, 5, 6"
 		     }
 		  ],
-		  "acrilico":[  
+		  "acrilico":[
 		     {  
 		        "nombre":"Porta aretes",
 		        "descripcion":"",
@@ -279,29 +274,46 @@ angular.module('catalogApp', ['ui.bootstrap'])
 		        "medidas":"2, 3, 4, 5, 6"
 		     }
 		  ]
-		};
+	};
 
-		function deleteModal(categoria) {
-		    $modal.open({
-		      templateUrl: 'templates/modal.html',
-		      controller: ['$modalInstance', 'catalogo', 'categoria', DeleteModalCtrl],
-		      controllerAs: 'catalogList',
-		      resolve: {
-		        catalogo: function () { return catalogList.catalogo },
-		        categoria: function() { return categoria; }
-		    }
-		  });
-		}
-	}
+  $scope.open = function (size) {
 
-	function DeleteModalCtrl($modalInstance, catalogo, categoria) {
-	  var catalogList = this;
-	  
-	  catalogList.categoria = categoria;
-	  catalogList.catalogo = catalogo;
-	  
-	  // function deletePerson() {
-	  //    //people.splice(people.indexOf(person), 1);
-	  //    $modalInstance.close();
-	  //  }
-	}
+    var modalInstance = $modal.open({
+      templateUrl: 'myModalContent.html',
+      controller: 'ModalInstanceCtrl',
+      size: size,
+      resolve: {
+        catalogo: function () {
+          return $scope.catalogo;
+        },
+        articulo: function(){
+          return size;
+        }
+      }
+    });
+
+  };
+
+});
+
+// Please note that $modalInstance represents a modal window (instance) dependency.
+// It is not the same as the $modal service used above.
+
+angular.module('catalogApp').controller('ModalInstanceCtrl', function ($scope, $modalInstance, catalogo, articulo) {
+  
+  console.log(articulo);
+  $scope.articulo = articulo;
+  
+  $scope.catalogo = catalogo;
+  $scope.selected = {
+    articulo: $scope.catalogo[0]
+  };
+
+  $scope.ok = function () {
+    $modalInstance.close($scope.selected.articulo);
+  };
+
+  $scope.cancel = function () {
+    $modalInstance.dismiss('cancel');
+  };
+});

@@ -45,13 +45,13 @@
     <!-- Page Content -->
     <div class="divider"></div>
 
-    <div class="container" ng-controller="catalogoController as catalogList">
+    <div class="container" ng-controller="catalogoController">
 
         <div class="row">
 
             <div class="col-md-3 bold">
                 <h3 class="lead">Categorias</h3>
-                <aside class="panel-group" id="accordion" role="tablist" ng-repeat="catalogo in catalogList">
+                <aside class="panel-group" id="accordion" role="tablist">
                     <div class="panel panel-default" ng-repeat="(categoria,value) in catalogo">
                       <div class="panel-heading" role="tab" id="collapseListGroupHeading{{categoria}}">
                         <h5 class="panel-title upper">
@@ -84,15 +84,16 @@
 
                 </div>
 
-                <div class="row" ng-repeat="catalogo in catalogList">
+                <div class="row">
                     <div ng-repeat="(categoria,value) in catalogo">
-                        <figure class="col-sm-3 col-lg-3 col-md-3 {{categoria}}" ng-repeat="articulo in value">
+                        <figure class="col-sm-3 col-lg-3 col-md-3 {{categoria}} {{value}}" ng-repeat="articulo in value">
                             <div class="thumbnail">
-                                <a ><img src="{{articulo.img}}" class="img-responsive img-center" alt="{{articulo.alt}}" ng-click="catalogList.deleteModal(articulo)">
-                                </a>
+                                <a ><img src="{{articulo.img}}" class="img-responsive img-center" alt="{{articulo.alt}}" ng-click="open(articulo)">
+                                
                                 <figurecaption class="text-center">
                                     <h5 class="name">{{articulo.nombre}}</h5>
                                 </figurecaption>
+                                </a>
                             </div>
                         </figure>
                     </div>
@@ -105,29 +106,6 @@
     <!-- /.container -->
     <!-- Footer Template -->
     <footer ng-include=" 'templates/footer.html' "></footer>
-    <!-- Modal Template -->
-    <!-- <div ng-controller="catalogoController as catalogList">
-        <div class="modal fade" id="Modal{{item.id}}" tabindex="-1" role="dialog" aria-labelledby="Label1" ng-repeat="item in catalogList.catalogo.alambre">
-          <div class="modal-dialog" role="document">
-            <div class="modal-content">
-              <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><i class="fa fa-times"></i></span></button>
-                <h4 class="modal-title text-center" id="lbl{{item.id}}">{{item.nombre}}</h4>
-              </div>
-              <div class="modal-body">
-                <div class="row">
-                    <figure class="col-md-10">
-                        <img src="{{item.img}}" alt="{{item.alt}}" class="img-responsive img-center img-modal">
-                    </figure>
-                    <p class="col-md-offset-4">{{item.descripcion}}</p>
-                    <span>Medidas: {{item.medidas}}</span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-    </div> -->
-    <!-- End Modal Template -->
     
     <!-- jQuery -->
     <script src="js/jquery.js" type="text/javascript"></script>
@@ -148,8 +126,26 @@
 
     <!-- Angular JS -->
     <script src="js/angular.min.js" type="text/javascript"></script>
-    <script src="js/ui-bootstrap-0.13.4.min.js" type="text/javascript"></script>
+    <script src="js/ui-bootstrap-tpls-0.11.2.js"></script>
     <script src="js/catalogo.js" type="text/javascript"></script>
+
+    <!-- Modal Cache Template -->
+    <script type="text/ng-template" id="myModalContent.html">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><i class="fa fa-times"></i></span></button>
+          <h4 class="modal-title text-center" id="lbl{{articulo.id}}">{{articulo.nombre}}</h4>
+        </div>
+        <div class="modal-body">
+          <div class="row">
+              <figure class="col-md-6">
+                  <img src="{{articulo.img}}" alt="{{articulo.alt}}" class="img-responsive img-center img-modal">
+              </figure>
+              <p class="col-md-offset-4">{{articulo.descripcion}}</p>
+              <span>Medidas: {{articulo.medidas}}</span>
+          </div>
+        </div>
+    </script>
+    <!-- End Modal Template -->
 
 </body>
 
