@@ -1,5 +1,5 @@
 angular.module('catalogApp', ['ui.bootstrap']);
-angular.module('catalogApp').controller('catalogoController', function ($scope, $modal, $log) {
+angular.module('catalogApp').controller('catalogoController', function ($scope, $modal) { //$log
   
   $scope.catalogo = {
 		  "alambre":[  
@@ -294,6 +294,11 @@ angular.module('catalogApp').controller('catalogoController', function ($scope, 
 
   };
 
+  $(function(){
+  	// Instantiate MixItUp:
+  	$('#Container').mixItUp();
+  });
+
 });
 
 // Please note that $modalInstance represents a modal window (instance) dependency.
@@ -301,7 +306,7 @@ angular.module('catalogApp').controller('catalogoController', function ($scope, 
 
 angular.module('catalogApp').controller('ModalInstanceCtrl', function ($scope, $modalInstance, catalogo, articulo) {
   
-  console.log(articulo);
+  //console.log(articulo);
   $scope.articulo = articulo;
   
   $scope.catalogo = catalogo;

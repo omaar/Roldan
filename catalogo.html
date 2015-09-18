@@ -45,7 +45,7 @@
     <!-- Page Content -->
     <div class="divider"></div>
 
-    <div class="container" ng-controller="catalogoController">
+    <div id="catalogo" class="container" ng-controller="catalogoController">
 
         <div class="row">
 
@@ -53,7 +53,7 @@
                 <h3 class="lead">Categorias</h3>
                 <aside class="panel-group" id="accordion" role="tablist">
                     <div class="panel panel-default" ng-repeat="(categoria,value) in catalogo">
-                      <div class="panel-heading" role="tab" id="collapseListGroupHeading{{categoria}}">
+                      <div class="panel-heading filter" data-filter=".{{categoria}}" role="tab" id="collapseListGroupHeading{{categoria}}">
                         <h5 class="panel-title upper">
                           <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseListGroup{{categoria}}" aria-expanded="false" aria-controls="collapseListGroup{{categoria}}">
                             <i class="fa fa-plus-square-o"></i>&nbsp; {{categoria}}
@@ -71,7 +71,7 @@
                 </aside>
             </div>
 
-            <div class="col-md-9">
+            <div id="Container" class="col-md-9">
 
                 <div class="row">
 
@@ -84,19 +84,17 @@
 
                 </div>
 
-                <div class="row">
-                    <div ng-repeat="(categoria,value) in catalogo">
-                        <figure class="col-sm-3 col-lg-3 col-md-3 {{categoria}} {{value}}" ng-repeat="articulo in value">
-                            <div class="thumbnail">
-                                <a ><img src="{{articulo.img}}" class="img-responsive img-center" alt="{{articulo.alt}}" ng-click="open(articulo)">
-                                
-                                <figurecaption class="text-center">
-                                    <h5 class="name">{{articulo.nombre}}</h5>
-                                </figurecaption>
-                                </a>
-                            </div>
-                        </figure>
-                    </div>
+                <div class="row" ng-repeat="(categoria,value) in catalogo">
+                    <figure class="col-sm-3 col-lg-3 col-md-3 mix {{categoria}}" ng-repeat="articulo in value" ng-click="open(articulo)">
+                        <div class="thumbnail">
+                            <img ng-src="{{articulo.img}}" class="img-responsive img-center" alt="{{articulo.alt}}">
+                            
+                            <figurecaption class="text-center">
+                                <p class="name">{{articulo.nombre}}</p>
+                            </figurecaption>
+
+                        </div>
+                    </figure>
                 </div>
             </div>
 
@@ -123,6 +121,8 @@
     <script src="js/owl.carousel.min.js" type="text/javascript"></script>-->
 
     <!--<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js" type="text/javascript"></script>-->
+    <!-- MixitUp -->
+    <script src="js/jquery.mixitup.min.js"></script>
 
     <!-- Angular JS -->
     <script src="js/angular.min.js" type="text/javascript"></script>
@@ -138,7 +138,7 @@
         <div class="modal-body">
           <div class="row">
               <figure class="col-md-6">
-                  <img src="{{articulo.img}}" alt="{{articulo.alt}}" class="img-responsive img-center img-modal">
+                  <img ng-src="{{articulo.img}}" alt="{{articulo.alt}}" class="img-responsive img-center img-modal">
               </figure>
               <p class="col-md-offset-4">{{articulo.descripcion}}</p>
               <span>Medidas: {{articulo.medidas}}</span>
