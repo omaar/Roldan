@@ -158,46 +158,52 @@ angular.module('catalogApp').controller('catalogoController', function ($scope, 
 		  ],
 		  "unicel":[  
 		     {  
+		     	"id":"Portapeluca",
 		        "nombre":"Porta peluca",
 		        "descripcion":"",
-		        "img":"../img/catalogo/porta-peluca.jpg",
+		        "img":"../img/catalogo/unicel/24-min.png",
 		        "alt":"Porta peluca",
 		        "medidas":"2, 3, 4, 5, 6"
 		     },
-		     {  
+		     {
+		     	"id":"ManiquieUnicel",
 		        "nombre":"Maniquie de Unicel",
 		        "descripcion":"",
-		        "img":"../img/catalogo/maniquie-unicel.jpg",
+		        "img":"../img/catalogo/unicel/22-min.png",
 		        "alt":"Maniquie de Unicel",
 		        "medidas":"2, 3, 4, 5, 6"
 		     }
 		  ],
 		  "terciopelo":[  
-		     {  
+		     {
+		     	"id":"PortaPulseras",
 		        "nombre":"Porta pulseras",
 		        "descripcion":"",
-		        "img":"../img/catalogo/porta-pulseras.jpg",
+		        "img":"../img/catalogo/terciopelo/05-min.png",
 		        "alt":"Porta pulseras",
 		        "medidas":"2, 3, 4, 5, 6"
 		     },
-		     {  
+		     {
+		     	"id": "PortaCollares",
 		        "nombre":"Porta collares",
 		        "descripcion":"",
-		        "img":"../img/catalogo/porta-collares.jpg",
+		        "img":"../img/catalogo/terciopelo/10-min.png",
 		        "alt":"Porta collares",
 		        "medidas":"2, 3, 4, 5, 6"
 		     },
-		     {  
+		     {
+		     	"id":"PortaAretes",
 		        "nombre":"Porta aretes",
 		        "descripcion":"",
-		        "img":"../img/catalogo/porta-aretes.jpg",
+		        "img":"../img/catalogo/terciopelo/08-min.png",
 		        "alt":"Porta aretes",
 		        "medidas":"2, 3, 4, 5, 6"
 		     },
-		     {  
+		     {
+		     	"id":"PortaReloj",
 		        "nombre":"Porta Reloj",
 		        "descripcion":"",
-		        "img":"../img/catalogo/porta-reloj.jpg",
+		        "img":"../img/catalogo/terciopelo/06-min.png",
 		        "alt":"Porta Reloj",
 		        "medidas":"2, 3, 4, 5, 6"
 		     }
@@ -273,6 +279,58 @@ angular.module('catalogApp').controller('catalogoController', function ($scope, 
 		        "alt":"Dulcero Acrílico",
 		        "medidas":"2, 3, 4, 5, 6"
 		     }
+		  ],
+		  "plastico":[
+		  	 {
+		  		"id": "TorsoMujer",
+		  		"nombre":"Torso Mujer",
+		        "descripcion":"",
+		        "img":"../img/catalogo/plastico/29-min.png",
+		        "alt":"Porta aretes",
+		        "medidas":""
+		     },
+		  	 {
+		  		"id": "TorsoHombre",
+		  		"nombre":"Torso Hombre",
+		        "descripcion":"",
+		        "img":"../img/catalogo/plastico/28-min.png",
+		        "alt":"Porta aretes",
+		        "medidas":""
+		     },
+		     {
+		    	"id":"Maniquie",
+		  		"nombre":"Maniquie",
+		        "descripcion":"",
+		        "img":"../img/catalogo/plastico/27-min.png",
+		        "alt":"Porta aretes",
+		        "medidas":""
+		     }
+		  ],
+		  "otros":[
+		  	 {
+		  		"id": "PortaPapelMadera",
+		  		"nombre":"Porta Papel de Madera",
+		        "descripcion":"",
+		        "img":"../img/catalogo/otros/01-min.png",
+		        "alt":"Porta Palel de Madera",
+		        "medidas":""
+		     },
+		  	 {
+		  		"id": "CarritoMandado",
+		  		"nombre":"Carrito Mandado",
+		        "descripcion":"",
+		        "img":"../img/catalogo/otros/31-min.png",
+		        "alt":"Carrito Mandado",
+		        "medidas":""
+		     },
+		     {
+		    	"id":"DiablitoCarga",
+		  		"nombre":"Diablito de Carga",
+		        "descripcion":"",
+		        "img":"../img/catalogo/otros/30-min.png",
+		        "alt":"Diablito de Carga",
+		        "medidas":""
+		     }
 		  ]
 	};
 
@@ -296,7 +354,11 @@ angular.module('catalogApp').controller('catalogoController', function ($scope, 
 
   $(function(){
   	// Instantiate MixItUp:
-  	$('#Container').mixItUp();
+  	$('#Container').mixItUp({
+  		load: {
+  			filter: '.alambre'
+		}
+  	});
   });
 
 });
