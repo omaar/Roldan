@@ -342,12 +342,8 @@ angular.module('catalogApp').controller('catalogoController', function ($scope, 
       controller: 'ModalInstanceCtrl',
       size: size,
       resolve: {
-        catalogo: function () {
-          return $scope.catalogo;
-        },
-        articulo: function(){
-          return size;
-        }
+        catalogo: function () { return $scope.catalogo; },
+        articulo: function(){ return size; }
       }
     });
 
