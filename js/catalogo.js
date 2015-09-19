@@ -2,159 +2,159 @@ angular.module('catalogApp', ['ui.bootstrap']);
 angular.module('catalogApp').controller('catalogoController', function ($scope, $modal) { //$log
   
   $scope.catalogo = {
-		  "alambre":[  
-		     {  
-		        "id":"Papelero",
-		        "nombre":"Papelero",
-		        "descripcion":"",
-		        "img":"../img/catalogo/alambre/25.png",
-		        "alt":"Papelero alambre",
-		        "medidas":"2, 3, 4, 5, 6"
-		     },
-		     {  
-		        "id":"Tarjetero",
-		        "nombre":"Tarjetero",
-		        "descripcion":"",
-		        "img":"../img/catalogo/alambre/26.png",
-		        "alt":"Tarjetero alambre",
-		        "medidas":"2, 3, 4, 5, 6"
-		     },
-		     {  
-		        "id":"PortaLentes",
-		        "nombre":"Porta Lentes",
-		        "descripcion":"",
-		        "img":"../img/catalogo/alambre/32.png",
-		        "alt":"Porta Lentes Alambre",
-		        "medidas":"2, 3, 4, 5, 6"
-		     },
-		     {  
-		        "id":"Canastilla",
-		        "nombre":"Canastilla",
-		        "descripcion":"",
-		        "img":"../img/catalogo/alambre/42.png",
-		        "alt":"Canastilla Alambre",
-		        "medidas":"2, 3, 4, 5, 6"
-		     },
-		     {  
-		        "id":"Mensula",
-		        "nombre":"Mensula",
-		        "descripcion":"",
-		        "img":"../img/catalogo/alambre/43.png",
-		        "alt":"Mensula Alambre",
-		        "medidas":"2, 3, 4, 5, 6"
-		     },
-		     {  
-		        "id":"GanchoenNiveles",
-		        "nombre":"Gancho en Niveles",
-		        "descripcion":"",
-		        "img":"../img/catalogo/alambre/44.png",
-		        "alt":"Gancho en Niveles",
-		        "medidas":"2, 3, 4, 5, 6"
-		     },
-		     {  
-		        "id":"Dulcero",
-		        "nombre":"Dulcero",
-		        "descripcion":"",
-		        "img":"../img/catalogo/alambre/",
-		        "alt":"Dulcero",
-		        "medidas":"2, 3, 4, 5, 6"
-		     },
-		     {  
-		        "id":"Barnicero",
-		        "nombre":"Barnicero",
-		        "descripcion":"",
-		        "img":"../img/catalogo/alambre/",
-		        "alt":"Barnicero",
-		        "medidas":"2, 3, 4, 5, 6"
-		     },
-		     {  
-		        "id":"BarniceroCombinado",
-		        "nombre":"Barnicero Combinado",
-		        "descripcion":"",
-		        "img":"../img/catalogo/alambre/",
-		        "alt":"Barnicero Combinado",
-		        "medidas":"2, 3, 4, 5, 6"
-		     },
-		     {  
-		        "id":"Aretero",
-		        "nombre":"Aretero",
-		        "descripcion":"",
-		        "img":"../img/catalogo/alambre/",
-		        "alt":"Aretero",
-		        "medidas":"2, 3, 4, 5, 6"
-		     },
-		     {  
-		        "id":"PortaLapizlabial",
-		        "nombre":"Porta lápiz labial",
-		        "descripcion":"",
-		        "img":"../img/catalogo/alambre/",
-		        "alt":"Porta lápiz labial",
-		        "medidas":"2, 3, 4, 5, 6"
-		     },
-		     {  
-		        "id":"Botanero",
-		        "nombre":"Botanero",
-		        "descripcion":"",
-		        "img":"../img/catalogo/alambre/",
-		        "alt":"Botanero",
-		        "medidas":"2, 3, 4, 5, 6"
-		     },
-		     {  
-		        "id":"PortaCartulina",
-		        "nombre":"Porta cartulina",
-		        "descripcion":"",
-		        "img":"../img/catalogo/alambre/",
-		        "alt":"Porta cartulina",
-		        "medidas":"2, 3, 4, 5, 6"
-		     },
-		     {  
-		        "id":"Botadero",
-		        "nombre":"Botadero",
-		        "descripcion":"",
-		        "img":"../img/catalogo/alambre/",
-		        "alt":"Botadero",
-		        "medidas":"2, 3, 4, 5, 6"
-		     },
-		     {  
-		        "id":"Esquinero",
-		        "nombre":"Esquinero",
-		        "descripcion":"",
-		        "img":"../img/catalogo/alambre/",
-		        "alt":"Esquinero",
-		        "medidas":"2, 3, 4, 5, 6"
-		     },
-		     {  
-		        "id":"PortaRopa",
-		        "nombre":"Porta ropa",
-		        "descripcion":"",
-		        "img":"../img/catalogo/alambre/",
-		        "alt":"Porta ropa",
-		        "medidas":"2, 3, 4, 5, 6"
-		     },
-		     {  
-		        "id":"PortaFlores",
-		        "nombre":"Porta flores",
-		        "descripcion":"",
-		        "img":"../img/catalogo/alambre/",
-		        "alt":"Porta flores",
-		        "medidas":"2, 3, 4, 5, 6"
-		     },
-		     {  
-		        "id":"ArañaDePiso",
-		        "nombre":"Araña de piso",
-		        "descripcion":"",
-		        "img":"../img/catalogo/alambre/",
-		        "alt":"Araña de piso",
-		        "medidas":"2, 3, 4, 5, 6"
-		     },
-		     {  
-		        "id":"PortaPinturas",
-		        "nombre":"Porta pinturas",
-		        "descripcion":"",
-		        "img":"../img/catalogo/alambre/48.jpg",
-		        "alt":"Porta pinturas",
-		        "medidas":"2, 3, 4, 5, 6"
-		     }
+		  "alambre":[
+			 {  
+			    "id":"Papelero",
+			    "nombre":"Papelero",
+			    "descripcion":"",
+			    "img":"../img/catalogo/alambre/25.png",
+			    "alt":"Papelero alambre",
+			    "medidas":"2, 3, 4, 5, 6"
+			 },
+			 {  
+			    "id":"Tarjetero",
+			    "nombre":"Tarjetero",
+			    "descripcion":"",
+			    "img":"../img/catalogo/alambre/26.png",
+			    "alt":"Tarjetero alambre",
+			    "medidas":"2, 3, 4, 5, 6"
+			 },
+			 {  
+			    "id":"PortaLentes",
+			    "nombre":"Porta Lentes",
+			    "descripcion":"",
+			    "img":"../img/catalogo/alambre/32.png",
+			    "alt":"Porta Lentes Alambre",
+			    "medidas":"2, 3, 4, 5, 6"
+			 },
+			 {  
+			    "id":"Canastilla",
+			    "nombre":"Canastilla",
+			    "descripcion":"",
+			    "img":"../img/catalogo/alambre/42.png",
+			    "alt":"Canastilla Alambre",
+			    "medidas":"2, 3, 4, 5, 6"
+			 },
+			 {  
+			    "id":"Mensula",
+			    "nombre":"Mensula",
+			    "descripcion":"",
+			    "img":"../img/catalogo/alambre/43.png",
+			    "alt":"Mensula Alambre",
+			    "medidas":"2, 3, 4, 5, 6"
+			 },
+			 {  
+			    "id":"GanchoenNiveles",
+			    "nombre":"Gancho en Niveles",
+			    "descripcion":"",
+			    "img":"../img/catalogo/alambre/44.png",
+			    "alt":"Gancho en Niveles",
+			    "medidas":"2, 3, 4, 5, 6"
+			 },
+			 {  
+			    "id":"Dulcero",
+			    "nombre":"Dulcero",
+			    "descripcion":"",
+			    "img":"../img/catalogo/alambre/",
+			    "alt":"Dulcero",
+			    "medidas":"2, 3, 4, 5, 6"
+			 },
+			 {  
+			    "id":"Barnicero",
+			    "nombre":"Barnicero",
+			    "descripcion":"",
+			    "img":"../img/catalogo/alambre/",
+			    "alt":"Barnicero",
+			    "medidas":"2, 3, 4, 5, 6"
+			 },
+			 {  
+			    "id":"BarniceroCombinado",
+			    "nombre":"Barnicero Combinado",
+			    "descripcion":"",
+			    "img":"../img/catalogo/alambre/",
+			    "alt":"Barnicero Combinado",
+			    "medidas":"2, 3, 4, 5, 6"
+			 },
+			 {  
+			    "id":"Aretero",
+			    "nombre":"Aretero",
+			    "descripcion":"",
+			    "img":"../img/catalogo/alambre/",
+			    "alt":"Aretero",
+			    "medidas":"2, 3, 4, 5, 6"
+			 },
+			 {  
+			    "id":"PortaLapizlabial",
+			    "nombre":"Porta lápiz labial",
+			    "descripcion":"",
+			    "img":"../img/catalogo/alambre/",
+			    "alt":"Porta lápiz labial",
+			    "medidas":"2, 3, 4, 5, 6"
+			 },
+			 {  
+			    "id":"Botanero",
+			    "nombre":"Botanero",
+			    "descripcion":"",
+			    "img":"../img/catalogo/alambre/",
+			    "alt":"Botanero",
+			    "medidas":"2, 3, 4, 5, 6"
+			 },
+			 {  
+			    "id":"PortaCartulina",
+			    "nombre":"Porta cartulina",
+			    "descripcion":"",
+			    "img":"../img/catalogo/alambre/",
+			    "alt":"Porta cartulina",
+			    "medidas":"2, 3, 4, 5, 6"
+			 },
+			 {  
+			    "id":"Botadero",
+			    "nombre":"Botadero",
+			    "descripcion":"",
+			    "img":"../img/catalogo/alambre/",
+			    "alt":"Botadero",
+			    "medidas":"2, 3, 4, 5, 6"
+			 },
+			 {  
+			    "id":"Esquinero",
+			    "nombre":"Esquinero",
+			    "descripcion":"",
+			    "img":"../img/catalogo/alambre/",
+			    "alt":"Esquinero",
+			    "medidas":"2, 3, 4, 5, 6"
+			 },
+			 {  
+			    "id":"PortaRopa",
+			    "nombre":"Porta ropa",
+			    "descripcion":"",
+			    "img":"../img/catalogo/alambre/",
+			    "alt":"Porta ropa",
+			    "medidas":"2, 3, 4, 5, 6"
+			 },
+			 {  
+			    "id":"PortaFlores",
+			    "nombre":"Porta flores",
+			    "descripcion":"",
+			    "img":"../img/catalogo/alambre/",
+			    "alt":"Porta flores",
+			    "medidas":"2, 3, 4, 5, 6"
+			 },
+			 {  
+			    "id":"ArañaDePiso",
+			    "nombre":"Araña de piso",
+			    "descripcion":"",
+			    "img":"../img/catalogo/alambre/",
+			    "alt":"Araña de piso",
+			    "medidas":"2, 3, 4, 5, 6"
+			 },
+			 {  
+			    "id":"PortaPinturas",
+			    "nombre":"Porta pinturas",
+			    "descripcion":"",
+			    "img":"../img/catalogo/alambre/48.jpg",
+			    "alt":"Porta pinturas",
+			    "medidas":"2, 3, 4, 5, 6"
+			 }
 		  ],
 		  "unicel":[  
 		     {  
@@ -352,7 +352,7 @@ angular.module('catalogApp').controller('catalogoController', function ($scope, 
 
   };
 
-  $(function(){
+  $(function() {
   	// Instantiate MixItUp:
   	$('#Container').mixItUp({
   		load: {
