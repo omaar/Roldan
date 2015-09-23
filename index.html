@@ -5,7 +5,7 @@
 
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
     <meta name="description" content="">
     <meta name="author" content="">
 
@@ -18,16 +18,6 @@
 
     <title>Exhibidores Roldan</title>
 
-    <!-- Bootstrap Core CSS -->
-    <link href="static/css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Custom CSS -->
-    <link href="static/css/front.css" rel="stylesheet">
-    
-    <link href="static/css/masterslider.css" rel="stylesheet">
-    <!-- <link href="css/animate.css" rel="tylesheet"> -->
-    <link href="static/css/font-awesome.min.css" rel="stylesheet">
-    <link href="static/css/owl.carousel.css" rel="stylesheet">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -179,22 +169,22 @@
                         <span class="circle">Nuevo</span>
                         <div class="caption">
                             <div class="caption-content">
-                                <i class="fa fa fa-eye fa-2x"></i>
+                                <i class="fa fa-expand fa-2x"></i>
                             </div>
                         </div>
-                        <img class="img-responsive img-center img-owl" src="static/img/catalogo/terciopelo/07-min.png" alt="Porta Reloj">
+                        <img class="img-responsive img-center img-owl" src="static/img/catalogo/terciopelo/porta-pulsera-3.png" alt="Porta Reloj">
                     </a>
                     <figcaption class="text-center name"><h5>Porta Reloj</h5></figcaption>
                 </figure>
                 <figure class="product-item">
                     <a href="#productModal2" class="product-link" data-toggle="modal">
-                    <span class="circle">Nuevo</span>
+                        <span class="circle">Nuevo</span>
                         <div class="caption">
                             <div class="caption-content">
-                                <i class="fa fa fa-eye fa-2x"></i>
+                                <i class="fa fa-expand fa-2x"></i>
                             </div>
                         </div>
-                        <img src="static/img/catalogo/alambre/43.png" class="img-responsive img-center img-owl" alt="Porta Anuncios">
+                        <img src="static/img/catalogo/alambre/tarjetero-mini.png" class="img-responsive img-center img-owl" alt="Porta Anuncios">
                     </a>
                     <figcaption class="text-center name"><h5>Porta Anuncios</h5></figcaption>
                 </figure>
@@ -203,10 +193,10 @@
                     <span class="circle">Nuevo</span>
                         <div class="caption">
                             <div class="caption-content">
-                                <i class="fa fa fa-eye fa-2x"></i>
+                                <i class="fa fa-expand fa-2x"></i>
                             </div>
                         </div>
-                        <img src="static/img/catalogo/otros/61.png" class="img-responsive img-center img-owl" alt="Porta Ropa">
+                        <img src="static/img/catalogo/alambre/porta-ropa-triangular.png" class="img-responsive img-center img-owl" alt="Porta Ropa">
                     </a>
                     <figcaption class="text-center name"><h5>Porta Ropa</h5></figcaption>
                 </figure>
@@ -216,10 +206,10 @@
                         <span class="circle">Nuevo</span>
                         <div class="caption">
                             <div class="caption-content">
-                                <i class="fa ffa fa-eye fa-2x"></i>
+                                <i class="fa fa-expand fa-2x"></i>
                             </div>
                         </div>
-                        <img src="static/img/catalogo/otros/31-min.png" class="img-responsive img-center img-owl" alt="Carrito de compras">
+                        <img src="static/img/catalogo/otros/carrito-mandado.png" class="img-responsive img-center img-owl" alt="Carrito de compras">
                     </a>
                     <figcaption class="text-center name"><h5>Carrito de Compras</h5></figcaption>
                 </figure>
@@ -229,10 +219,10 @@
                         <span class="circle">Top</span>
                         <div class="caption">
                             <div class="caption-content">
-                                <i class="fa fa fa-eye fa-2x"></i>
+                                <i class="fa fa-expand fa-2x"></i>
                             </div>
                         </div>
-                        <img src="static/img/catalogo/alambre/56.png" class="img-responsive img-center img-owl" alt="Porta Cartulina">
+                        <img src="static/img/catalogo/alambre/porta-cartulina-3.png" class="img-responsive img-center img-owl" alt="Porta Cartulina">
                     </a>
                     <figcaption class="text-center name"><h5>Porta Cartulina</h5></figcaption>
                 </figure>
@@ -331,7 +321,7 @@
     </footer>
 
     <!-- Modal 1 -->
-    <div class="modal fade" id="productModal1" tabindex="-1" role="dialog" aria-labelledby="Label1">
+    <div class="modal modal-lg fade" id="productModal1" tabindex="-1" role="dialog" aria-labelledby="Label1">
       <div class="modal-dialog" role="document">
         <div class="modal-content">
           <div class="modal-header">
@@ -339,16 +329,29 @@
             <h4 class="modal-title text-center" id="Label1">Porta Reloj</h4>
           </div>
           <div class="modal-body">
-            <div class="row">
-                <figure class="col-md-6"><img src="static/img/catalogo/terciopelo/07-min.png" alt="articulo" class="img-responsive img-center">
+              <div class="row">
+                <figure class="col-lg-6 col-sm-5 col-product-image">
+                  <div class="images zoom img-zoom">
+                    <a>
+                      <img src="{{articulo.img}}" ng-src="{{articulo.img}}" alt="{{articulo.alt}}" class="img-responsive img-center img-modal">
+                    </a>
+                  </div>
                 </figure>
-                <p class="col-md-offset-4"></p>
-            </div>
-          </div>
-          <!-- <div class="modal-footer">
-            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-            <button type="button" class="btn btn-primary">Save changes</button>
-          </div> -->
+                <div class="col-lg-6 col-sm-7 col-product-detail text-left summary flip">
+                  <h2 class="modal-title" id="lbl{{articulo.id}}">{{articulo.nombre}}</h2>
+
+                  <p class="">{{articulo.descripcion}}</p>
+                  <p class="title_block">CH: <span>{{articulo.medidas.CH}}</span></p>
+                  <p class="title_block">M: <span>{{articulo.medidas.M}}</span></p>
+                  <p class="title_block">G: <span>{{articulo.medidas.G}}</span></p>
+
+                  <button type="button" class="btn btn-danger btn-md" ng-click="ok()">
+                    <span><i class="fa fa-times"></i> Cerrar</span>
+                  </button>
+                </div>
+                
+              </div>
+        </div>
         </div>
       </div>
     </div>
@@ -441,7 +444,17 @@
       </div>
     </div>
     <!-- End Modal 1 -->
+    
+    <!-- Bootstrap Core CSS -->
+    <link href="static/css/bootstrap.min.css" rel="stylesheet">
 
+    <!-- Custom CSS -->
+    <link href="static/css/front.css" rel="stylesheet">
+    
+    <link href="static/css/masterslider.css" rel="stylesheet">
+    <!-- <link href="css/animate.css" rel="tylesheet"> -->
+    <link href="static/css/font-awesome.min.css" rel="stylesheet">
+    <link href="static/css/owl.carousel.css" rel="stylesheet">
     <!-- jQuery -->
     <script src="static/js/jquery.js"></script>
 
@@ -457,6 +470,16 @@
     <script src="https://maps.googleapis.com/maps/api/js?v=3" type="text/javascript"></script>
     <script src="static/js/masterslider.min.js"></script>
     <script src="static/js/owl.carousel.min.js"></script>
+    <!-- Google Analytics 
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-68048700-1', 'auto');
+      ga('send', 'pageview');
+    </script>-->
 </body>
 
 </html>

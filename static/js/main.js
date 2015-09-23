@@ -11,9 +11,9 @@ angular.module('catalogApp').controller('catalogoController', function ($scope, 
 			    "img":"../static/img/catalogo/alambre/blister.jpg",
 			    "alt":"Blister",
 			    "medidas": {
-			    	"CH":"",
+			    	"CH":"5cm",
 			    	"M":"",
-			    	"G":""
+			    	"G":"30cm"
 			    }
 			 },
 			 {  
@@ -565,11 +565,14 @@ angular.module('catalogApp').controller('catalogoController', function ($scope, 
 
   $(function() {
   	// Instantiate MixItUp:
-  	$('#Container').mixItUp({
+  	$('#productos').mixItUp({
   		load: {
   			filter: '.alambre'
 		}
   	});
+
+  	$('.img-zoom').zoom();
+
   });
 });
 
