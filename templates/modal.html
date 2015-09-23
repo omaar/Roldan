@@ -1,13 +1,25 @@
-<div class="modal-header">
-  <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><i class="fa fa-times"></i></span></button>
-  <h4 class="modal-title text-center" id="lbl{{articulo.id}}">{{articulo.nombre}}</h4>
-</div>
 <div class="modal-body">
   <div class="row">
-      <figure class="col-md-4">
-          <img src="{{articulo.img}}" alt="{{articulo.alt}}" class="img-responsive img-center img-modal">
-      </figure>
-      <p class="col-md-offset-4">{{articulo.descripcion}}</p>
-      <span>Medidas: {{articulo.medidas}}</span>
+    <figure class="col-lg-6 col-sm-5 col-product-image">
+      <div class="images">
+        <a>
+          <img ng-src="{{articulo.img}}" alt="{{articulo.alt}}" class="img-responsive img-center img-modal">
+        </a>
+      </div>
+    </figure>
+    <div class="col-lg-6 col-sm-7 col-product-detail text-left summary flip">
+      <h2 class="modal-title" id="lbl{{articulo.id}}">{{articulo.nombre}}</h2>
+
+      <p class="">{{articulo.descripcion}}</p>
+      <p class="title_block">CH: <span>{{articulo.medidas.CH}}</span></p>
+      <p class="title_block">M: <span>{{articulo.medidas.M}}</span></p>
+      <p class="title_block">G: <span>{{articulo.medidas.G}}</span></p>
+
+      <button type="button" class="btn btn-danger btn-md" ng-click="ok()">
+        <span><i class="fa fa-times"></i> Cerrar</span>
+      </button>
+    </div>
+    
   </div>
+  
 </div>

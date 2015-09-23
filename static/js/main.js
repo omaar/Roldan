@@ -5,156 +5,269 @@ angular.module('catalogApp').controller('catalogoController', function ($scope, 
   $scope.catalogo = {
 		  "alambre":[
 			 {  
-			    "id":"Papelero",
-			    "nombre":"Papelero",
-			    "descripcion":"",
-			    "img":"../img/catalogo/alambre/25.png",
-			    "alt":"Papelero alambre",
-			    "medidas":"2, 3, 4, 5, 6"
-			 },
-			 {  
-			    "id":"Tarjetero",
-			    "nombre":"Tarjetero",
-			    "descripcion":"",
-			    "img":"../img/catalogo/alambre/26.png",
-			    "alt":"Tarjetero alambre",
-			    "medidas":"2, 3, 4, 5, 6"
-			 },
-			 {  
-			    "id":"PortaLentes",
-			    "nombre":"Porta Lentes",
-			    "descripcion":"",
-			    "img":"../img/catalogo/alambre/32.png",
-			    "alt":"Porta Lentes Alambre",
-			    "medidas":"2, 3, 4, 5, 6"
+			    "id":"blister",
+			    "nombre":"Blister",
+			    "descripcion":"Disponible en color Blanco en medidas de 5cm a 30cm",
+			    "img":"../static/img/catalogo/alambre/blister.jpg",
+			    "alt":"Blister",
+			    "medidas": {
+			    	"CH":"",
+			    	"M":"",
+			    	"G":""
+			    }
 			 },
 			 {  
 			    "id":"Canastilla",
-			    "nombre":"Canastilla",
-			    "descripcion":"",
-			    "img":"../img/catalogo/alambre/42.png",
+			    "nombre":"Canastilla de Alambre",
+			    "descripcion":"Disponible en color Blanco",
+			    "img":"../static/img/catalogo/alambre/canastilla.jpg",
 			    "alt":"Canastilla Alambre",
-			    "medidas":"2, 3, 4, 5, 6"
+			    "medidas": {
+			    	"CH":"29cm x 15cm",
+			    	"M":"40cm x 20cm",
+			    	"G":"60cm x 20cm"
+			    }
 			 },
 			 {  
-			    "id":"Mensula",
-			    "nombre":"Mensula",
-			    "descripcion":"",
-			    "img":"../img/catalogo/alambre/43.png",
-			    "alt":"Mensula Alambre",
-			    "medidas":"2, 3, 4, 5, 6"
+			    "id":"Cascadas",
+			    "nombre":"Cascadas de Alambre",
+			    "descripcion":"Disponible en color Blanco de Tres a Siete Pernos",
+			    "img":"../static/img/catalogo/alambre/cascadas.jpg",
+			    "alt":"Cascadas Alambre",
+			    "medidas": {
+			    	"CH":"20cm, 25cm",
+			    	"M":"29cm, 34cm",
+			    	"G":"39cm"
+			    }
 			 },
 			 {  
-			    "id":"GanchoenNiveles",
-			    "nombre":"Gancho en Niveles",
-			    "descripcion":"",
-			    "img":"../img/catalogo/alambre/44.png",
-			    "alt":"Gancho en Niveles",
-			    "medidas":"2, 3, 4, 5, 6"
+			    "id":"Repisa",
+			    "nombre":"Repisa de Alambre",
+			    "descripcion":"Disponible en color Blanco, perfecto para uso con exhibipanel",
+			    "img":"../static/img/catalogo/alambre/repisa.jpg",
+			    "alt":"Repisa de Alambre",
+			    "medidas": {
+			    	"CH":"40cm x 20cm",
+			    	"M":"60cm x 20cm ",
+			    	"G":"80cm x 20cm"
+			    }
 			 },
-			 {  
-			    "id":"Dulcero",
-			    "nombre":"Dulcero",
-			    "descripcion":"",
-			    "img":"../img/catalogo/alambre/",
-			    "alt":"Dulcero",
-			    "medidas":"2, 3, 4, 5, 6"
+		  	 {  
+			    "id":"ArañaDeMostrador",
+			    "nombre":"Araña de mostrador",
+			    "descripcion":"Disponible en color Blanco de Uno a Tres Niveles",
+			    "img":"../static/img/catalogo/alambre/araña-mostrador.png",
+			    "imghd":"../static/img/catalogo/alambre/46.png",
+			    "alt":"Araña de mostrador",
+			    "medidas": {
+			    	"CH":"62cm x 41cm",
+			    	"M":"",
+			    	"G":""
+			    }
 			 },
-			 {  
-			    "id":"Barnicero",
-			    "nombre":"Barnicero",
-			    "descripcion":"",
-			    "img":"../img/catalogo/alambre/",
-			    "alt":"Barnicero",
-			    "medidas":"2, 3, 4, 5, 6"
-			 },
-			 {  
-			    "id":"BarniceroCombinado",
-			    "nombre":"Barnicero Combinado",
-			    "descripcion":"",
-			    "img":"../img/catalogo/alambre/",
-			    "alt":"Barnicero Combinado",
-			    "medidas":"2, 3, 4, 5, 6"
+		  	 {  
+			    "id":"ArañaDePiso",
+			    "nombre":"Araña de piso",
+			    "descripcion":"Disponible en color Blanco de Uno a Cinco Niveles",
+			    "img":"../static/img/catalogo/alambre/araña-piso.png",
+			    "alt":"Araña de piso",
+			    "medidas": {
+			    	"CH":"",
+			    	"M":"",
+			    	"G":"158cm x 39cm"
+			    }
 			 },
 			 {  
 			    "id":"Aretero",
 			    "nombre":"Aretero",
-			    "descripcion":"",
-			    "img":"../img/catalogo/alambre/",
-			    "alt":"Aretero",
-			    "medidas":"2, 3, 4, 5, 6"
+			    "descripcion":"Disponible en color Blanco de Uno a Cinco Niveles",
+			    "img":"../static/img/catalogo/alambre/aretero.png",
+			    "alt":"Aretero de Alambre",
+			    "medidas": {
+			    	"CH":"29cm x 18cm",
+			    	"M":"155cm x 50cm",
+			    	"G":""
+			    }
 			 },
 			 {  
-			    "id":"PortaLapizlabial",
-			    "nombre":"Porta lápiz labial",
-			    "descripcion":"",
-			    "img":"../img/catalogo/alambre/",
-			    "alt":"Porta lápiz labial",
-			    "medidas":"2, 3, 4, 5, 6"
+			    "id":"Barnicero",
+			    "nombre":"Barnicero",
+			    "descripcion":"Disponible en color Blanco.",
+			    "img":"../static/img/catalogo/alambre/barnicero.png",
+			    "alt":"Barnicero",
+			    "medidas": {
+			    	"CH":"32cm x 29cm",
+			    	"M":"42cm x 29cm",
+			    	"G":""
+			    }
 			 },
 			 {  
-			    "id":"Botanero",
-			    "nombre":"Botanero",
-			    "descripcion":"",
-			    "img":"../img/catalogo/alambre/",
-			    "alt":"Botanero",
-			    "medidas":"2, 3, 4, 5, 6"
-			 },
-			 {  
-			    "id":"PortaCartulina",
-			    "nombre":"Porta cartulina",
-			    "descripcion":"",
-			    "img":"../img/catalogo/alambre/",
-			    "alt":"Porta cartulina",
-			    "medidas":"2, 3, 4, 5, 6"
+			    "id":"BarniceroCombinado",
+			    "nombre":"Barnicero Combinado",
+			    "descripcion":"Disponible en color Blanco",
+			    "img":"../static/img/catalogo/alambre/barnicero-combinado.png",
+			    "alt":"Barnicero Combinado",
+			    "medidas": {
+			    	"CH":"36cm x 20cm",
+			    	"M":"",
+			    	"G":""
+			    }
 			 },
 			 {  
 			    "id":"Botadero",
 			    "nombre":"Botadero",
-			    "descripcion":"",
-			    "img":"../img/catalogo/alambre/",
+			    "descripcion":"Disponible en color Blanco de Dos a Cinco Niveles",
+			    "img":"../static/img/catalogo/alambre/botadero.png",
 			    "alt":"Botadero",
-			    "medidas":"2, 3, 4, 5, 6"
+			    "medidas": {
+			    	"CH":"",
+			    	"M":"",
+			    	"G":"113cm x 36cm"
+			    }
+			 },
+			 {  
+			    "id":"Botanero",
+			    "nombre":"Botanero",
+			    "descripcion":"Disponible en color Blanco de Dos y Tres niveles",
+			    "img":"../static/img/catalogo/alambre/botanero.png",
+			    "alt":"Botanero",
+			    "medidas": {
+			    	"CH":"69cm x 25cm",
+			    	"M":"",
+			    	"G":""
+			    }
+			 },
+			 {  
+			    "id":"Cajon",
+			    "nombre":"Cajon de Alambre",
+			    "descripcion":"Disponible en color Blanco",
+			    "img":"../static/img/catalogo/alambre/cajones.png",
+			    "alt":"Cajon de Alambre",
+			    "medidas": {
+			    	"CH":"36cm x 36cm",
+			    	"M":"50cm x 36cm",
+			    	"G":"60cm x 49cm"
+			    }
 			 },
 			 {  
 			    "id":"Esquinero",
-			    "nombre":"Esquinero",
-			    "descripcion":"",
-			    "img":"../img/catalogo/alambre/",
-			    "alt":"Esquinero",
-			    "medidas":"2, 3, 4, 5, 6"
+			    "nombre":"Esquinero de Alambre",
+			    "descripcion":"Disponible en color Blanco de Dos a Cuatro niveles",
+			    "img":"../static/img/catalogo/alambre/esquinero.png",
+			    "alt":"Esquinero de Alambre",
+			    "medidas": {
+			    	"CH":"48cm x 29cm",
+			    	"M":"75cm x 29cm",
+			    	"G":"101cm X 29cm "
+			    }
 			 },
 			 {  
-			    "id":"PortaRopa",
-			    "nombre":"Porta ropa",
-			    "descripcion":"",
-			    "img":"../img/catalogo/alambre/",
-			    "alt":"Porta ropa",
-			    "medidas":"2, 3, 4, 5, 6"
+			    "id":"Frutero",
+			    "nombre":"Frutero de Alambre",
+			    "descripcion":"Disponible en color Blanco de Dos a Cuatro niveles",
+			    "img":"../static/img/catalogo/alambre/frutero.png",
+			    "alt":"Frutero de Alambre",
+			    "medidas": {
+			    	"CH":"55x29",
+			    	"M":"74cm x 29cm",
+			    	"G":""
+			    }
+			 },
+			 {  
+			    "id":"PortaCartulina",
+			    "nombre":"Porta cartulina",
+			    "descripcion":"Disponible en color Blanco de Hasta 27 Niveles",
+			    "img":"../static/img/catalogo/alambre/porta-cartulina-2.png",
+			    "alt":"Porta cartulina",
+			    "medidas": {
+			    	"CH":"48cm x 112cm",
+			    	"M":"59cm x 140cm",
+			    	"G":"121cm x 56cm"
+			    }
 			 },
 			 {  
 			    "id":"PortaFlores",
 			    "nombre":"Porta flores",
 			    "descripcion":"",
-			    "img":"../img/catalogo/alambre/",
+			    "img":"../static/img/catalogo/alambre/porta-flores.png",
 			    "alt":"Porta flores",
-			    "medidas":"2, 3, 4, 5, 6"
+			    "medidas": {
+			    	"CH":"",
+			    	"M":"",
+			    	"G":"156cm x 18cm"
+			    }
 			 },
 			 {  
-			    "id":"ArañaDePiso",
-			    "nombre":"Araña de piso",
-			    "descripcion":"",
-			    "img":"../img/catalogo/alambre/",
-			    "alt":"Araña de piso",
-			    "medidas":"2, 3, 4, 5, 6"
+			    "id":"PortaHojas",
+			    "nombre":"Porta Hojas",
+			    "descripcion":"Disponible en color Blanco y en versiones Vertical y en Pila",
+			    "img":"../static/img/catalogo/alambre/porta-hojas.png",
+			    "alt":"Porta Hojas",
+			    "medidas": {
+			    	"CH":"",
+			    	"M":"100cm x 25 (6-10 Niveles)",
+			    	"G":"150cm x 25 (26 Niveles)"
+			    }
+			 },
+			 {  
+			    "id":"PortaLapizlabial",
+			    "nombre":"Porta lápiz labial",
+			    "descripcion":"Disponible en color Blanco y en versiones Vertical y en Pila",
+			    "img":"../static/img/catalogo/alambre/porta-labial.png",
+			    "alt":"Porta lápiz labial",
+			    "medidas": {
+			    	"CH":"26cm x 17cm (70 Compartimentos)",
+			    	"M":"",
+			    	"G":""
+			    }
 			 },
 			 {  
 			    "id":"PortaPinturas",
 			    "nombre":"Porta pinturas",
-			    "descripcion":"",
-			    "img":"../img/catalogo/alambre/48.jpg",
+			    "descripcion":"Disponible en color Blanco de Dos y Cuatro Niveles",
+			    "img":"../static/img/catalogo/alambre/porta-pinturas.png",
 			    "alt":"Porta pinturas",
-			    "medidas":"2, 3, 4, 5, 6"
+			    "medidas": {
+			    	"CH":"23cm x 35cm (2 Niveles)",
+			    	"M":"51cm x 35cm (4 Niveles)",
+			    	"G":""
+			    }
+			 },
+			 {  
+			    "id":"PortaRopa",
+			    "nombre":"Porta ropa",
+			    "descripcion":"Disponible en color Negro",
+			    "img":"../static/img/catalogo/alambre/porta-ropa-circular.png",
+			    "alt":"Porta ropa",
+			    "medidas": {
+			    	"CH":"",
+			    	"M":"",
+			    	"G":"140cm x 64cm"
+			    }
+			 },
+			 {  
+			    "id":"TarjeteroMostrador",
+			    "nombre":"Tarjetero de mostrador",
+			    "descripcion":"Disponible en color Blanco de Cuatro y Cinco Niveles",
+			    "img":"../static/img/catalogo/alambre/tarjetero-mini.png",
+			    "alt":"Tarjetero Mini",
+			    "medidas": {
+			    	"CH":"",
+			    	"M":"25cm x 29cm (4 Niveles)",
+			    	"G":"35cm x 33cm (5 Niveles)"
+			    }
+			 },
+			 {  
+			    "id":"TarjeteroNiveles",
+			    "nombre":"Tarjetero de mostrador en niveles",
+			    "descripcion":"Disponible en color Blanco de Cuatro y Cinco Niveles",
+			    "img":"../static/img/catalogo/alambre/tarjetero-niveles.png",
+			    "alt":"Tarjetero en Niveles",
+			    "medidas": {
+			    	"CH":"",
+			    	"M":"69x28",
+			    	"G":" 156cm x 49cm"
+			    }
 			 }
 		  ],
 		  "unicel":[  
@@ -162,123 +275,187 @@ angular.module('catalogApp').controller('catalogoController', function ($scope, 
 		     	"id":"Portapeluca",
 		        "nombre":"Porta peluca",
 		        "descripcion":"",
-		        "img":"../img/catalogo/unicel/24-min.png",
+		        "img":"../static/img/catalogo/unicel/23-min.png",
 		        "alt":"Porta peluca",
-		        "medidas":"2, 3, 4, 5, 6"
+		        "medidas": {
+			    	"CH":"",
+			    	"M":"",
+			    	"G":""
+			    }
 		     },
 		     {
 		     	"id":"ManiquieUnicel",
 		        "nombre":"Maniquie de Unicel",
 		        "descripcion":"",
-		        "img":"../img/catalogo/unicel/22-min.png",
+		        "img":"../static/img/catalogo/unicel/maniquie-unicel.png",
 		        "alt":"Maniquie de Unicel",
-		        "medidas":"2, 3, 4, 5, 6"
+		        "medidas": {
+			    	"CH":"100cm x 42cm",
+			    	"M":"",
+			    	"G":""
+			    }
 		     }
 		  ],
 		  "terciopelo":[  
 		     {
 		     	"id":"PortaPulseras",
 		        "nombre":"Porta pulseras",
-		        "descripcion":"",
-		        "img":"../img/catalogo/terciopelo/05-min.png",
+		        "descripcion":"Disponible en color Negro, de Uno a Tres Niveles",
+		        "img":"../static/img/catalogo/terciopelo/porta-pulsera-3.png",
 		        "alt":"Porta pulseras",
-		        "medidas":"2, 3, 4, 5, 6"
+		        "medidas": {
+			    	"CH":"10cm x 29cm",
+			    	"M":"25cm x 29cm",
+			    	"G":"33cm x 29cm"
+			    }
 		     },
 		     {
 		     	"id": "PortaCollares",
 		        "nombre":"Porta collares",
-		        "descripcion":"",
-		        "img":"../img/catalogo/terciopelo/10-min.png",
+		        "descripcion":"Disponible en color Negro, de Uno a Cuatro Niveles",
+		        "img":"../static/img/catalogo/terciopelo/porta-collar-2.png",
 		        "alt":"Porta collares",
-		        "medidas":"2, 3, 4, 5, 6"
+		        "medidas": {
+			    	"CH":"25cm x 18cm",
+			    	"M":"25cm x 16cm",
+			    	"G":"35cm x 28cm"
+			    }
 		     },
 		     {
 		     	"id":"PortaAretes",
 		        "nombre":"Porta aretes",
-		        "descripcion":"",
-		        "img":"../img/catalogo/terciopelo/08-min.png",
+		        "descripcion":"Disponible en color Negro, de Uno a Tres Niveles",
+		        "img":"../static/img/catalogo/terciopelo/aretero.png",
 		        "alt":"Porta aretes",
-		        "medidas":"2, 3, 4, 5, 6"
+		        "medidas": {
+			    	"CH":"25cm x 30cm",
+			    	"M":"32cm x 25cm",
+			    	"G":"38cm x 37cm"
+			    }
 		     },
 		     {
 		     	"id":"PortaReloj",
 		        "nombre":"Porta Reloj",
-		        "descripcion":"",
-		        "img":"../img/catalogo/terciopelo/06-min.png",
+		        "descripcion":"Disponible en color Negro, de Uno a Tres Niveles",
+		        "img":"../static/img/catalogo/terciopelo/porta-pulsera.png",
 		        "alt":"Porta Reloj",
-		        "medidas":"2, 3, 4, 5, 6"
+		        "medidas": {
+			    	"CH":"36cm x 20cm",
+			    	"M":"",
+			    	"G":""
+			    }
 		     }
 		  ],
 		  "acrilico":[
 		     {  
 		        "nombre":"Porta aretes",
 		        "descripcion":"",
-		        "img":"../img/catalogo/porta-aretes-acrilico.jpg",
+		        "img":"../static/img/catalogo/porta-aretes-acrilico.jpg",
 		        "alt":"Porta aretes",
-		        "medidas":"2, 3, 4, 5, 6"
+		        "medidas": {
+			    	"CH":"36cm x 20cm",
+			    	"M":"",
+			    	"G":""
+			    }
 		     },
 		     {  
 		        "nombre":"Porta Lentes",
 		        "descripcion":"",
-		        "img":"../img/catalogo/porta-lentes-acrilico.jpg",
+		        "img":"../static/img/catalogo/porta-lentes-acrilico.jpg",
 		        "alt":"Porta Lentes Acrílico",
-		        "medidas":"2, 3, 4, 5, 6"
+		        "medidas": {
+			    	"CH":"36cm x 20cm",
+			    	"M":"",
+			    	"G":""
+			    }
 		     },
 		     {  
 		        "nombre":"Porta teléfono",
 		        "descripcion":"",
-		        "img":"../img/catalogo/porta-telefono.jpg",
+		        "img":"../static/img/catalogo/porta-telefono.jpg",
 		        "alt":"Porta teléfono",
-		        "medidas":"2, 3, 4, 5, 6"
+		        "medidas": {
+			    	"CH":"36cm x 20cm",
+			    	"M":"",
+			    	"G":""
+			    }
 		     },
 		     {  
 		        "nombre":"Porta tablet",
 		        "descripcion":"",
-		        "img":"../img/catalogo/porta-tablet.jpg",
+		        "img":"../static/img/catalogo/porta-tablet.jpg",
 		        "alt":"Porta tablet",
-		        "medidas":"2, 3, 4, 5, 6"
+		        "medidas": {
+			    	"CH":"36cm x 20cm",
+			    	"M":"",
+			    	"G":""
+			    }
 		     },
 		     {  
 		        "nombre":"Porta Papel",
 		        "descripcion":"",
-		        "img":"../img/catalogo/porta-papel.jpg",
+		        "img":"../static/img/catalogo/porta-papel.jpg",
 		        "alt":"Porta Papel",
-		        "medidas":"2, 3, 4, 5, 6"
+		        "medidas": {
+			    	"CH":"36cm x 20cm",
+			    	"M":"",
+			    	"G":""
+			    }
 		     },
 		     {  
 		        "nombre":"Porta Reloj Acrílico",
 		        "descripcion":"",
-		        "img":"../img/catalogo/porta-reloj-acrilico.jpg",
+		        "img":"../static/img/catalogo/porta-reloj-acrilico.jpg",
 		        "alt":"Porta Reloj Acrílico",
-		        "medidas":"2, 3, 4, 5, 6"
+		        "medidas": {
+			    	"CH":"36cm x 20cm",
+			    	"M":"",
+			    	"G":""
+			    }
 		     },
 		     {  
 		        "nombre":"Porta Plumas",
 		        "descripcion":"",
-		        "img":"../img/catalogo/porta-plumas.jpg",
+		        "img":"../static/img/catalogo/porta-plumas.jpg",
 		        "alt":"Porta Plumas",
-		        "medidas":"2, 3, 4, 5, 6"
+		        "medidas": {
+			    	"CH":"36cm x 20cm",
+			    	"M":"",
+			    	"G":""
+			    }
 		     },
 		     {  
 		        "nombre":"Porta Anuncios",
 		        "descripcion":"",
-		        "img":"../img/catalogo/porta-anuncios.jpg",
+		        "img":"../static/img/catalogo/porta-anuncios.jpg",
 		        "alt":"Porta Anuncios",
-		        "medidas":"2, 3, 4, 5, 6"
+		        "medidas": {
+			    	"CH":"36cm x 20cm",
+			    	"M":"",
+			    	"G":""
+			    }
 		     },
 		     {  
 		        "nombre":"Porta Zapatos",
 		        "descripcion":"",
-		        "img":"../img/catalogo/porta-zapatos.jpg",
+		        "img":"../static/img/catalogo/porta-zapatos.jpg",
 		        "alt":"Porta Zapatos",
-		        "medidas":"2, 3, 4, 5, 6"
+		        "medidas": {
+			    	"CH":"36cm x 20cm",
+			    	"M":"",
+			    	"G":""
+			    }
 		     },
 		     {  
 		        "nombre":"Dulcero Acrílico",
 		        "descripcion":"",
-		        "img":"../img/catalogo/dulcero-acrilico.jpg",
+		        "img":"../static/img/catalogo/dulcero-acrilico.jpg",
 		        "alt":"Dulcero Acrílico",
-		        "medidas":"2, 3, 4, 5, 6"
+		        "medidas": {
+			    	"CH":"36cm x 20cm",
+			    	"M":"",
+			    	"G":""
+			    }
 		     }
 		  ],
 		  "plastico":[
@@ -286,25 +463,25 @@ angular.module('catalogApp').controller('catalogoController', function ($scope, 
 		  		"id": "TorsoMujer",
 		  		"nombre":"Torso Mujer",
 		        "descripcion":"",
-		        "img":"../img/catalogo/plastico/29-min.png",
-		        "alt":"Porta aretes",
-		        "medidas":""
+		        "img":"../static/img/catalogo/plastico/torso-mujer.png",
+		        "alt":"Torso Mujer",
+		        "medidas": {
+			    	"CH":"42cm x 40cm",
+			    	"M":"",
+			    	"G":""
+			    }
 		     },
 		  	 {
 		  		"id": "TorsoHombre",
 		  		"nombre":"Torso Hombre",
 		        "descripcion":"",
-		        "img":"../img/catalogo/plastico/28-min.png",
-		        "alt":"Porta aretes",
-		        "medidas":""
-		     },
-		     {
-		    	"id":"Maniquie",
-		  		"nombre":"Maniquie",
-		        "descripcion":"",
-		        "img":"../img/catalogo/plastico/27-min.png",
-		        "alt":"Porta aretes",
-		        "medidas":""
+		        "img":"../static/img/catalogo/plastico/torso-hombre.png",
+		        "alt":"Torso Hombre",
+		        "medidas": {
+			    	"CH":"59cm x 48cm",
+			    	"M":"",
+			    	"G":""
+			    }
 		     }
 		  ],
 		  "otros":[
@@ -312,38 +489,75 @@ angular.module('catalogApp').controller('catalogoController', function ($scope, 
 		  		"id": "PortaPapelMadera",
 		  		"nombre":"Porta Papel de Madera",
 		        "descripcion":"",
-		        "img":"../img/catalogo/otros/01-min.png",
+		        "img":"../static/img/catalogo/otros/porta-papel-madera.png",
 		        "alt":"Porta Palel de Madera",
-		        "medidas":""
+		        "medidas": {
+			    	"CH":"36cm x 20cm",
+			    	"M":"",
+			    	"G":""
+			    }
 		     },
 		  	 {
 		  		"id": "CarritoMandado",
 		  		"nombre":"Carrito Mandado",
 		        "descripcion":"",
-		        "img":"../img/catalogo/otros/31-min.png",
+		        "img":"../static/img/catalogo/otros/carrito-mandado.png",
 		        "alt":"Carrito Mandado",
-		        "medidas":""
+		        "medidas": {
+			    	"CH":"100cm x 36cm ",
+			    	"M":"",
+			    	"G":"92cm x 43cm"
+			    }
 		     },
 		     {
 		    	"id":"DiablitoCarga",
 		  		"nombre":"Diablito de Carga",
 		        "descripcion":"",
-		        "img":"../img/catalogo/otros/30-min.png",
+		        "img":"../static/img/catalogo/otros/diablito-carga.png",
 		        "alt":"Diablito de Carga",
-		        "medidas":""
+		        "medidas": {
+			    	"CH":"98cm x 26cm",
+			    	"M":"100cm x 26cm",
+			    	"G":"110cm x 32cm (Reforzado)"
+			    }
+		     },
+		     {
+		    	"id":"MensulaCromada",
+		  		"nombre":"Mensula Cromada",
+		        "descripcion":"",
+		        "img":"../static/img/catalogo/otros/mensulas-cromada.jpg",
+		        "alt":"Mensula Cromada",
+		        "medidas": {
+			    	"CH":"",
+			    	"M":"",
+			    	"G":""
+			    }
+		     },
+		     {
+		    	"id":"MensulaSimple",
+		  		"nombre":"Mensula Simple",
+		        "descripcion":"",
+		        "img":"../static/img/catalogo/otros/mensula.jpg",
+		        "alt":"Mensula Simple",
+		        "medidas": {
+			    	"CH":"",
+			    	"M":"",
+			    	"G":""
+			    }
 		     }
 		  ]
 	};
 
-  $scope.open = function (size) {
+  $scope.open = function (articulo) {
 
     var modalInstance = $modal.open({
-      templateUrl: 'myModalContent.html',
+      templateUrl: 'templates/modal.html',
       controller: 'ModalInstanceCtrl',
-      size: size,
+      articulo: articulo,
+      size: 'lg',
       resolve: {
         catalogo: function () { return $scope.catalogo; },
-        articulo: function(){ return size; }
+        articulo: function(){ return articulo; }
       }
     });
 

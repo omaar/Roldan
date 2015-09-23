@@ -86,13 +86,13 @@
 
                 <div class="row" ng-repeat="(categoria,value) in catalogo">
 
-                    <figure class="col-sm4 col-lg-4 col-md-4 mix {{categoria}}" ng-repeat="articulo in value" ng-click="open(articulo)">
+                    <figure class="col-sm-4 col-lg-4 col-md-4 mix {{categoria}}" ng-repeat="articulo in value" ng-click="open(articulo)">
                         <div class="thumbnail">
                             <img ng-src="{{articulo.img}}" class="img-responsive img-center" alt="{{articulo.alt}}">
                             
-                            <figurecaption class="text-center">
-                                <p class="name text-center">{{articulo.nombre}}</p>
-                            </figurecaption>
+                            <figcaption class="text-left">
+                                <p><span class="name">{{articulo.nombre}}</span></p>
+                            </figcaption>
 
                         </div>
 
@@ -121,7 +121,6 @@
     <script src="js/app.js"></script>
     <script src="js/masterslider.min.js" type="text/javascript"></script>
     <script src="js/owl.carousel.min.js" type="text/javascript"></script>-->
-
     <!--<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js" type="text/javascript"></script>-->
     <!-- MixitUp -->
     <script src="static/js/jquery.mixitup.min.js"></script>
@@ -132,23 +131,8 @@
     <script src="static/js/main.js" type="text/javascript"></script>
 
     <!-- Modal Cache Template -->
-    <script type="text/ng-template" id="myModalContent.html">
-        <div class="modal-header">
-          <button type="button" class="close"><span ><i class="fa fa-times" ng-click="ok()"></i></span></button>
-          <h4 class="modal-title text-center" id="lbl{{articulo.id}}">{{articulo.nombre}}</h4>
-        </div>
-        <div class="modal-body">
-          <div class="row">
-              <figure class="col-md-8">
-                  <img ng-src="{{articulo.img}}" alt="{{articulo.alt}}" class="img-responsive img-center img-modal">
-              </figure>
-              <p class="col-md-offset-4">{{articulo.descripcion}}</p>
-              <span>Medidas: {{articulo.medidas}}</span>
-          </div>
-        </div>
-    </script>
+    
     <!-- End Modal Template -->
-
 </body>
 
 </html>
