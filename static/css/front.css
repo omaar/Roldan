@@ -184,7 +184,14 @@ button.btn.btn-danger.btn-md {
     width: 250px; 
     height: 250px;
 }
-
+.info {
+    top: 0;
+    color: #fff;
+    background-color: #EBEBEB;
+    padding: 0px;
+    height: 40px;
+    width: 100%;
+}
 .title_block span {
     position: relative;
     color: #373737;
@@ -307,12 +314,12 @@ ol.breadcrumb {
 
 #productos .product-item {
     right: 0;
-    margin: 0 0 15px;
+    margin: 0 0 0px;
 }
 
 #productos .product-item:hover {
     right: 0;
-    margin: 0 0 15px;
+    margin: 0 0 0px;
 }
 
 #productos .product-item .product-link {
@@ -470,21 +477,32 @@ footer, footer a {
 }
 
 .thumbnail {
-    border-radius: 1px;
-    cursor: pointer;
-}
-
-.thumbnail img{
-    padding: 20px 0px;
-    
-    background: -moz-radial-gradient(0% 0%, ellipse cover, #FFFFFF 2%, #FBFBFB 43%, #F0F0F0 100%);/* FF3.6+ */
-    background: -webkit-radial-gradient(0% 0%, ellipse cover, #FFFFFF 2%, #FBFBFB 43%, #F0F0F0 100%);/* Chrome10+,Safari5.1+ */
-    background: -o-radial-gradient(0% 0%, ellipse cover, #FFFFFF 2%, #FBFBFB 43%, #F0F0F0 100%);/* Opera 11.10+ */
-    background: -ms-radial-gradient(0% 0%, ellipse cover, #FFFFFF 2%, #FBFBFB 43%, #F0F0F0 100%);/* IE10+ */
-    background: radial-gradient(0% 0%, ellipse cover, #FFFFFF 2%, #FBFBFB 43%, #F0F0F0 100%);/* W3C */
-    
     border-radius: 2px;
+    padding: 2px;
     cursor: pointer;
+    background-color: transparent;
+    -moz-box-shadow: 0 0 5px rgba(0,0,0,0.2);
+    -webkit-box-shadow: 0 0 5px rgba(0,0,0,0.2);
+    box-shadow: 0 0 5px rgba(0,0,0,0.2);
+}
+.grid{
+    background-color: #F9F9F9;
+    border-radius: 2px;
+    //padding: 0px 10px ;
+    margin: 10px 10px;
+}
+.thumbnail img{
+    padding: 0px 0px;
+    background-color: #F4F4F4;
+    border: none;
+    border-radius: 2px;
+    webkit-transition: all .4s ease; /* Safari and Chrome */
+    -moz-transition: all .4s ease; /* Firefox */
+    -ms-transition: all .4s ease; /* IE 9 */
+    -o-transition: all .4s ease; /* Opera */
+    transition: all .4s ease;
+    cursor: pointer;
+
 }
 
 .white-text {
@@ -544,4 +562,24 @@ footer ul.list-inline li a {
     -o-background-size: cover;      /* Opera*/
     background-size: cover;         /* Generic*/
     opacity: .90;
+}
+#medidas-gb {
+    border-style: solid;
+    border-radius: 0px;
+    font-size: 13px;
+    font-weight: bold;
+    height: 34px;
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-left: 0;
+    width: 55px;
+    padding: 0;
+    padding-right: 0;
+    border-width: 2px;
+    border-color: #F0F0F0;
+    color: #272727;
+    background-color: #ffffff;
+}
+#main {
+    background-color: #f9f9f9;
 }
