@@ -1,13 +1,12 @@
 <!DOCTYPE html>
 <html lang="es-MX" ng-app="catalogApp">
-
 <head>
-
     <meta charset="UTF-8">
+    <meta name="fragment" content="!">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
     <meta name="description" content="En Exhibidores Roldán somos fabricantes de exhibidores para el hogar o negocio, y contamos con una amplia gama de productos hechos de alambre, terciopelo, plastico, acrilico, unicel, etc.">
-    <meta name="keywords" content="Exhibidores en alambre,exhibidores,nuevo,porta,catalogo,productos,alambre,plastico,acrilico,rejas,roldan,df">
+    <meta name="keywords" content="Exhibidores en alambre,Exhibidores Roldan,exhibidores,nuevo,porta,catalogo,productos,alambre,plastico,acrilico,rejas,roldan,df">
     <meta name="author" content="">
     <!-- Twitter Cards -->
     <meta name="twitter:card" content="summary" />
@@ -31,18 +30,13 @@
     <link href="static/css/font-awesome.min.css" rel="stylesheet">
     <link href="static/css/masterslider.css" rel="stylesheet">
 </head>
-
 <body id="main" data-spy="scroll" data-target=".navbar-fixed-top">
-
     <!-- Navigation -->
     <header><nav ng-include=" 'templates/navbar.html' " id="page-header" class="navbar navbar-default navbar-fixed-top" role="navigation"></nav></header>
     <!-- Page Content -->
-    <div class="divider"></div>
-
+    <div ng-include=" 'templates/steps.html' "></div>
     <div id="catalogo" class="container" ng-controller="catalogoController">
-        
         <div class="row">
-
             <section class="col-md-3 ">
                 <h2 class="title_block"> <span>Categorias</span> </h2>
                 <aside class="panel-group" id="accordion" role="tablist">
@@ -64,7 +58,6 @@
                     </div>
                 </aside>
             </section>
-
             <div id="productos" class="col-md-9" class="container">
                 <div class="banner" id="banner"></div>
                 <div class="divider"></div>
@@ -76,7 +69,6 @@
                         </ol>
                     </div>
                 </div>
-
                 <article class="row grid" ng-repeat="(categoria,value) in catalogo">
                     <figure class="product-item pad col-xs-12 col-sm-6 col-md-4 col-lg-4 mix {{categoria}}" ng-repeat="articulo in value" ng-click="open(articulo)">
                         <a class="product-link thumbnail">
@@ -92,7 +84,6 @@
                     </figure>
                 </article>
             </div>
-
         </div>
         <a id="topcontrol" class="page-scroll" title="Volver arriba" href="#main"><i class="fa fa-angle-up fa-2x"></i></a>
     </div>
@@ -126,5 +117,4 @@
     
     <!-- End Modal Template -->
 </body>
-
 </html>

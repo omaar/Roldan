@@ -1,7 +1,6 @@
 angular.module('catalogApp', ['ui.bootstrap']);
 
 angular.module('catalogApp').controller('catalogoController', function ($scope, $modal) { //$log
-  
   $scope.catalogo = {
 		  "alambre":[
 			 {  

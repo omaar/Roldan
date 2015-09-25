@@ -1,8 +1,3 @@
-/*!
- * Start Bootstrap - Business Frontpage HTML Template (http://startbootstrap.com)
- * Code licensed under the Apache License v2.0.
- * For details, see http://www.apache.org/licenses/LICENSE-2.0.
- */
 @import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
 
 html, body {
@@ -471,7 +466,35 @@ footer, footer a {
     width: 200px;
     border-top: 3px solid #70A8DA;
 }
-
+.steps-block-col {
+    overflow: hidden;
+    min-height: 71px;
+}
+.steps-block em {
+    font: normal 400 13px ;
+    text-transform: uppercase;
+}
+i.fa.fa-step {
+    font-size: 40px;
+    border: none;
+    border-radius: 30px !important;
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    vertical-align: middle;
+    padding-top: 22px;
+    margin-right: 11px;
+    float: left;
+}
+.steps-block-col span {
+    font-size: 60px;
+    display: block;
+    width: 36px;
+    height: 71px;
+    position: absolute;
+    top: 0;
+    right: 10px;
+}
 .footer-hr {
     color: #fff;
 }

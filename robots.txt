@@ -1,0 +1,9 @@
+User-agent: *
+Disallow: static/js
+Disallow: static/css
+Allow: static/img
+Allow: templates/footer.html
+Allow: templates/modal.html
+Allow: templates/navbar.html
+Allow: /catalogo.html
+Allow: /index.html
