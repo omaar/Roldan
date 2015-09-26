@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="es-MX">
 <head>
-
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
@@ -131,13 +130,9 @@
 
             </div>
             <!-- END MasterSlider Main -->
-
         </div>
         <!-- END MasterSlider -->
-
     </header>
-
-    
     <section id="steps" class="container">
         <div class="">
             <div class="steps-block steps-block-red">
@@ -162,7 +157,7 @@
                   <div class="col-md-4 steps-block-col">
                     <i class="fa fa-phone fa-step"></i>
                     <div>
-                      <h2>(55) 5491-0458 </h2>
+                      <h2>55 5491-0458 </h2>
                       <em>De 10:00 am - 7:00 pm, Lun-Dom</em>
                     </div>
                   </div>
@@ -174,7 +169,7 @@
     <hr>
     <br>
     <section id="productos" class="container">
-        <h1 class="text-center"><span class="category-title animated bounce">- PRODUCTOS -</span></h1>
+        <h1 class="text-center"><span class="category-title animated bounce">-PRODUCTOS-</span></h1>
         <div class="divider"></div>
         <article class="row">
             <div id="owl-carousel">
@@ -283,6 +278,7 @@
             </section>
         </article>
     </section>
+    <a id="topcontrol" class="page-scroll" title="Volver arriba" href="#top"><i class="fa fa-angle-up fa-2x"></i></a>
     <div class="divider"></div>
         <!-- Footer -->
     <div class="content-section-a">
@@ -334,129 +330,114 @@
         <!-- /.row -->
     </footer>
     <!-- Modal 1 -->
-    <div class="modal modal-lg fade" id="productModal1" tabindex="-1" role="dialog" aria-labelledby="Label1">
+    <div class="modal modal fade" id="productModal1" tabindex="-1" role="dialog" aria-labelledby="Label1">
       <div class="modal-dialog" role="document">
         <div class="modal-content">
           <div class="modal-header">
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><i class="fa fa-times"></i></span></button>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
             <h4 class="modal-title text-center" id="Label1">Porta Reloj</h4>
           </div>
           <div class="modal-body">
-              <div class="row">
-                <figure class="col-lg-6 col-sm-5 col-product-image">
-                  <div class="images zoom img-zoom">
-                    <a>
-                      <img src="{{articulo.img}}" ng-src="{{articulo.img}}" alt="{{articulo.alt}}" class="img-responsive img-center img-modal">
-                    </a>
-                  </div>
-                </figure>
+            <div class="row">
+                <figure class="col-sm-6 col-xs-12"><img src="static/img/catalogo/terciopelo/porta-pulsera-2.png" alt="articulo" class="img-responsive img-center"></figure>
                 <div class="col-lg-6 col-sm-7 col-product-detail text-left summary flip">
-                  <h2 class="modal-title" id="lbl{{articulo.id}}">{{articulo.nombre}}</h2>
-
-                  <p class="">{{articulo.descripcion}}</p>
-                  <p class="title_block">CH: <span>{{articulo.medidas.CH}}</span></p>
-                  <p class="title_block">M: <span>{{articulo.medidas.M}}</span></p>
-                  <p class="title_block">G: <span>{{articulo.medidas.G}}</span></p>
-
-                  <button type="button" class="btn btn-danger btn-md" ng-click="ok()">
-                    <span><i class="fa fa-times"></i> Cerrar</span>
-                  </button>
+                  <p class="">Disponible en color Negro, de Uno a Tres Niveles</p>
+                  <p class="title_block">CH: <span>36CM X 20CM</span></p>
                 </div>
-                
-              </div>
-        </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
     <!-- End Modal 1 -->
-
     <!-- Modal 2 -->
     <div class="modal fade" id="productModal2" tabindex="-1" role="dialog" aria-labelledby="Label2">
       <div class="modal-dialog" role="document">
         <div class="modal-content">
           <div class="modal-header">
             <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-            <h4 class="modal-title text-center" id="Label2">Porta Anuncios</h4>
+            <h4 class="modal-title text-center" id="Label2">Tarjetero Mini</h4>
           </div>
           <div class="modal-body">
             <div class="row">
-                <figure class="col-sm-5 col-xs-12"><img src="static/img/catalogo/alambre/56.png" alt="articulo" class="img-responsive img-center"></figure>
+                <figure class="col-sm-6 col-xs-12"><img src="static/img/catalogo/alambre/tarjetero-mini.png" alt="articulo" class="img-responsive img-center"></figure>
+                <div class="col-lg-6 col-sm-7 col-product-detail text-left summary flip">
+                  <p class="">Disponible en color Blanco de Cuatro y Cinco Niveles</p>
+                  <p class="title_block">M: <span>25CM X 29CM (4 NIVELES)</span></p>
+                  <p class="title_block">G: <span>35CM X 33CM (5 NIVELES)</span></p>
+                </div>
             </div>
           </div>
-          <!-- <div class="modal-footer">
-            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-            <button type="button" class="btn btn-primary">Save changes</button>
-          </div> -->
         </div>
       </div>
     </div>
     <!-- End Modal 2 -->
-
-    <!-- Modal 1 -->
+    <!-- Modal 3 -->
     <div class="modal fade" id="productModal3" tabindex="-1" role="dialog" aria-labelledby="Label3">
       <div class="modal-dialog" role="document">
         <div class="modal-content">
           <div class="modal-header">
             <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-            <h4 class="modal-title text-center" id="Label3">Articulo</h4>
+            <h4 class="modal-title text-center" id="Label3">Porta Ropa</h4>
           </div>
           <div class="modal-body">
             <div class="row">
-                <figure class="col-sm-5 col-xs-12"><img src="http://demo.posthemes.com/pos_cendo/48-home_default/faded-short-sleeves-tshirt.jpg" alt="articulo" class="img-responsive img-center"></figure>
+                <figure class="col-sm-6 col-xs-12"><img src="static/img/catalogo/alambre/porta-ropa-triangular.png" alt="articulo" class="img-responsive img-center"></figure>
+                <div class="col-lg-6 col-sm-7 col-product-detail text-left summary flip">
+                  <p class="">Disponible en color Negro</p>
+                  <p class="title_block">G: <span>140CM X 64CM</span></p>
+                </div>
             </div>
           </div>
-          <!-- <div class="modal-footer">
-            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-            <button type="button" class="btn btn-primary">Save changes</button>
-          </div> -->
         </div>
       </div>
     </div>
-    <!-- End Modal 1 -->
-
-    <!-- Modal 1 -->
+    <!-- End Modal 3 -->
+    <!-- Modal 4 -->
     <div class="modal fade" id="productModal4" tabindex="-1" role="dialog" aria-labelledby="Label4">
       <div class="modal-dialog" role="document">
         <div class="modal-content">
           <div class="modal-header">
             <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-            <h4 class="modal-title text-center" id="Label4">Articulo</h4>
+            <h4 class="modal-title text-center" id="Label4">Carrito de Compras</h4>
           </div>
           <div class="modal-body">
             <div class="row">
-                <figure class="col-sm-5 col-xs-12"><img src="http://demo.posthemes.com/pos_cendo/48-home_default/faded-short-sleeves-tshirt.jpg" alt="" class="img-responsive img-center"></figure>
+                <figure class="col-sm-6 col-xs-12"><img src="static/img/catalogo/otros/carrito-mandado.png" alt="" class="img-responsive img-center"></figure>
+                <div class="col-lg-6 col-sm-7 col-product-detail text-left summary flip">
+                  <p class="">Hecho en aluminio, disponible con o sin bolsa</p>
+                  <p class="title_block">CH: <span>92CM X 43CM</span></p>
+                  <p class="title_block">G: <span>100CM X 36CM</span></p>
+                </div>
             </div>
           </div>
-          <!-- <div class="modal-footer">
-            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-            <button type="button" class="btn btn-primary">Save changes</button>
-          </div> -->
         </div>
       </div>
     </div>
-    <!-- End Modal 1 -->
-
-    <!-- Modal 1 -->
+    <!-- End Modal 4 -->
+    <!-- Modal 5 -->
     <div class="modal fade" id="productModal5" tabindex="-1" role="dialog" aria-labelledby="Label5">
       <div class="modal-dialog" role="document">
         <div class="modal-content">
           <div class="modal-header">
             <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-            <h4 class="modal-title text-center" id="Label5">Articulo</h4>
+            <h4 class="modal-title text-center" id="Label5">Porta Cartulina</h4>
           </div>
           <div class="modal-body">
             <div class="row">
-                <figure class="col-sm-5 col-xs-12"><img src="static/img/catalogo/alambre/56.png" alt="" class="img-responsive img-center"></figure>
+                <figure class="col-sm-6 col-xs-12"><img src="static/img/catalogo/alambre/porta-cartulina-3.png" alt="" class="img-responsive img-center"></figure>
+                <div class="col-lg-6 col-sm-7 col-product-detail text-left summary flip">
+                  <p class="">Disponible en color Blanco de Hasta 27 Niveles</p>
+                  <p class="title_block">CH: <span>48CM X 112CM</span></p>
+                  <p class="title_block">M: <span>59CM X 140CM</span></p>
+                  <p class="title_block">G: <span>121CM X 56CM</span></p>
+                </div>
             </div>
           </div>
-          <!-- <div class="modal-footer">
-            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-            <button type="button" class="btn btn-primary">Save changes</button>
-          </div> -->
         </div>
       </div>
     </div>
-    <!-- End Modal 1 -->
+    <!-- End Modal 5 -->
     <!-- jQuery -->
     <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
     <!-- Bootstrap Core JavaScript -->

@@ -1,6 +1,4 @@
-angular.module('catalogApp', ['ui.bootstrap']);
-angular.module('catalogApp').controller('catalogoController', function ($scope, $modal) {
-  $scope.catalogo = {
+$scope.catalogo = {
 		  "alambre":[
 			 {  
 			    "id":"blister",
@@ -556,13 +554,3 @@ angular.module('catalogApp').controller('catalogoController', function ($scope, 
 		     }
 		  ]
 	};
-  $scope.open = function (articulo) { var modalInstance = $modal.open({ templateUrl: 'templates/modal.html', controller: 'ModalInstanceCtrl', articulo: articulo, size: 'lg', resolve: { catalogo: function () { return $scope.catalogo; }, articulo: function(){ return articulo; } } }); };
-  $(function() { $('#productos').mixItUp({ load: { filter: '.alambre' } }); });
-});
-angular.module('catalogApp').controller('ModalInstanceCtrl', function ($scope, $modalInstance, catalogo, articulo) {
-  $scope.articulo = articulo;
-  $scope.catalogo = catalogo;
-  $scope.selected = { articulo: $scope.catalogo[0] };
-  $scope.ok = function () { $modalInstance.close($scope.selected.articulo); };
-  $scope.cancel = function () { $modalInstance.dismiss('cancel'); };
-});
