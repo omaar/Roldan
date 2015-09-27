@@ -86,7 +86,7 @@ button.btn.btn-danger.btn-md {
 .circle {
     color: #fff;
     font-weight: 700;
-    background-color: #EEE;
+    background-color: #EBEBEB;
     padding: 31px 16px;
     z-index: 1;
     position: absolute;
@@ -119,7 +119,7 @@ button.btn.btn-danger.btn-md {
 .label-sale {
     color: #fff;
     font-weight: 700;
-    background: #4BB8C8;
+    background: #7FB4E3;
     padding: 31px 16px;
     z-index: 1;
     position: absolute;
