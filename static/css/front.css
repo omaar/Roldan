@@ -238,7 +238,9 @@ ul.nav.navbar-nav.navbar-right li a:hover {
     top: 15%;
     border-radius: 0;
 }
-
+.modal-header {
+    border-style: none;
+}
 .modal-content {
     color: #595959;
     background-color: #ffffff;
