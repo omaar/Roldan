@@ -7,3 +7,4 @@ Allow: templates/modal.html
 Allow: templates/navbar.html
 Allow: /catalogo.html
 Allow: /index.html
+Allow: /contacto.html
