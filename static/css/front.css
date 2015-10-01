@@ -16,7 +16,7 @@ a:hover, a:focus {
     text-decoration: none;
 }
 
-a.btn.btn-default, a.btn.btn-primary, a.btn.btn-default.btn-lg{
+apbtn.btn-default, a.btn.btn-primary, a.btn.btn-default.btn-lg{
     border-radius: 1px;
     -webkit-transition: all 0.4s;
     -moz-transition: all 0.4s;
@@ -313,10 +313,12 @@ ol.breadcrumb {
     -webkit-box-shadow: 0 0 5px rgba(0,0,0,0.1);
     box-shadow: 0 0 5px rgba(0,0,0,0.1);
 }
-
 .pad{
     padding: 8px;
     margin: 0px;
+}
+.panel.panel-default {
+    margin-top: 5px;
 }
 
 #productos .product-item {

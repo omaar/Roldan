@@ -2,7 +2,13 @@ module.exports = function(grunt) {
   grunt.initConfig({
     copy: {
       dist: {
-        cwd: 'src/', expand: true, src: '**', dest: 'dist/'
+        files: [
+          {cwd: 'templates/', expand: true, src: '**', dest: 'test/templates'},
+          {cwd: 'static/img/', expand: true, src: '**', dest: 'test/static/img'},
+          {cwd: 'static/fonts/', expand: true, src: '**', dest: 'test/static/fonts'},
+          {cwd: 'static/js/', expand: true, src: ['ui-bootstrap-tpls-0.13.4.min.js','main.js'], dest: 'test/static/js'},
+          {cwd: '/', expand: true, src: ['/robots.txt','/sitemap.xml'], dest: 'test/'}
+        ]
       }
     },
     // Remove unused CSS across multiple files, compressing the final output
@@ -30,37 +36,64 @@ module.exports = function(grunt) {
             ".in",
             ".modal-backdrop",
             /\.open/
-          ]
+          ],
+          compress:true
         },
       files: [
-        { src: '*.html', dest: 'dist/css/main.css'}
+        { src: '*.html', dest: 'test/css/main.css'}
       ]
-      },
-      options: {
-        compress:true
+      }
+    },
+    cssmin: {
+      target: {
+        files: {
+          'test/static/css/main.min.css': ['static/css/bootstrap.css', 'static/css/font-awesome.min.css'
+          ,'static/css/owl.carousel.css','static/css/masterslider.css','static/css/front.css'],
+          'test/static/css/app.min.css': ['static/css/bootstrap.css', 'static/css/font-awesome.min.css'
+          ,'static/css/front.css']
+        }
       }
     },
     processhtml: {
       dist: {
         files: {
-        'dist/index.html': ['src/index.html']
+        'test/index.html': ['index.html'],
+        'test/catalogo.html': ['catalogo.html'],
+        'test/contacto.html': ['contacto.html']
         }
       }
     },
     uglify: {
       dist: {
         files: {
-          'dist/js/compiled.min.js': ['static/js/bootstrap.min.js','static/js/jquery.easing.min.js'
-          ,'static/js/scrolling-nav.js','static/js/owl.carousel.min.js','static/js/app.js'] // make sure we load jQuery first
+          'test/static/js/app.min.js': ['static/js/bootstrap.min.js','static/js/jquery.easing.min.js'
+          ,'static/js/scrolling-nav.js','static/js/owl.carousel.min.js','static/js/masterslider.min.js','static/js/app.js'],
+          'test/static/js/catalogo.min.js': ['static/js/bootstrap.min.js','static/js/jquery.easing.min.js','static/js/scrolling-nav.js'],
+          'test/static/js/contacto.min.js': ['static/js/jquery.easing.min.js','static/js/scrolling-nav.js','static/js/mapContact.js'],
+        }
+      }
+    },
+    htmlmin: {                                     // Task 
+      dist: {                                      // Target 
+        options: {                                 // Target options 
+          removeComments: true,
+          collapseWhitespace: true
+        },
+        files: {                                   // Dictionary of files 
+          'test/index.html': 'test/index.html',     // 'destination': 'source' 
+          'test/catalogo.html': 'test/catalogo.html',
+          'test/contacto.html': 'test/contacto.html'
         }
       }
     }
   });
   // Load the plugins
   grunt.loadNpmTasks('grunt-contrib-copy');
-  grunt.loadNpmTasks('grunt-uncss');
-  grunt.loadNpmTasks('grunt-processhtml');
+  //grunt.loadNpmTasks('grunt-uncss');
+  grunt.loadNpmTasks('grunt-contrib-cssmin');
   grunt.loadNpmTasks('grunt-contrib-uglify');
+  grunt.loadNpmTasks('grunt-processhtml');
+  grunt.loadNpmTasks('grunt-contrib-htmlmin');
   // Default tasks.
-  grunt.registerTask('default', ['copy', 'uglify', 'uncss','processhtml']);
+  grunt.registerTask('default', ['copy','cssmin','uglify','processhtml','htmlmin']);
 };
