@@ -241,7 +241,7 @@ angular.module('catalogApp').controller('catalogoController', function ($scope, 
 			    	"CH":"",
 			    	"M":"",
 			    	"G":"140cm x 64cm"
-			    }
+			    },
 			    "popular":".popular"
 			 },
 			 {  
