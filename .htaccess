@@ -25,11 +25,11 @@ AddOutputFilterByType DEFLATE application/rss+xml
 AddOutputFilterByType DEFLATE application/javascript
 AddOutputFilterByType DEFLATE application/x-javascript
 # Common Fonts
-AddOutputFilterByType DEFLATE image/svg+xml
-AddOutputFilterByType DEFLATE application/x-font-ttf
-AddOutputFilterByType DEFLATE application/font-woff
-AddOutputFilterByType DEFLATE application/vnd.ms-fontobject
-AddOutputFilterByType DEFLATE application/x-font-otf
+#AddOutputFilterByType DEFLATE image/svg+xml
+#AddOutputFilterByType DEFLATE application/x-font-ttf
+#AddOutputFilterByType DEFLATE application/font-woff
+#AddOutputFilterByType DEFLATE application/vnd.ms-fontobject
+#AddOutputFilterByType DEFLATE application/x-font-otf
 </IfModule>
 <IfModule mod_gzip.c>
 mod_gzip_on Yes

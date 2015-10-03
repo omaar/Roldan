@@ -232,16 +232,17 @@ angular.module('catalogApp').controller('catalogoController', function ($scope, 
 			    }
 			 },
 			 {  
-			    "id":"PortaRopa",
-			    "nombre":"Porta ropa",
+			    "id":"RackRopa",
+			    "nombre":"Rack para ropa",
 			    "descripcion":"Disponible en color Negro",
 			    "img":"../static/img/catalogo/alambre/porta-ropa-circular.png",
-			    "alt":"Porta ropa",
+			    "alt":"Rack para ropa",
 			    "medidas": {
 			    	"CH":"",
 			    	"M":"",
 			    	"G":"140cm x 64cm"
 			    }
+			    "popular":".popular"
 			 },
 			 {  
 			    "id":"TarjeteroMostrador",
@@ -253,6 +254,18 @@ angular.module('catalogApp').controller('catalogoController', function ($scope, 
 			    	"CH":"",
 			    	"M":"25cm x 29cm (4 Niveles)",
 			    	"G":"35cm x 33cm (5 Niveles)"
+			    }
+			 },
+			 {  
+			    "id":"RejaAlambre",
+			    "nombre":"Reja de Alambre",
+			    "descripcion":"Disponible en color Blanco.",
+			    "img":"../static/img/catalogo/alambre/reja.jpg",
+			    "alt":"Reja de Alambre",
+			    "medidas": {
+			    	"CH":"36cm x 36cm",
+			    	"M":"150cm x 60cm",
+			    	"G":"200cm x 100cm"
 			    }
 			 },
 			 {  

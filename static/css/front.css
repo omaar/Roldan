@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,700");
 
 html, body {
     padding-top: 48px; /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
@@ -15,8 +15,14 @@ a:hover, a:focus {
     color: #7FB4E3;
     text-decoration: none;
 }
+.help-block.text-danger {
+    color: #fff;
+    background-color: #D9534F;
+    border-radius: 2px;
+    width: 300px;
+}
 
-apbtn.btn-default, a.btn.btn-primary, a.btn.btn-default.btn-lg{
+btn.btn-default, a.btn.btn-primary, a.btn.btn-default.btn-lg{
     border-radius: 1px;
     -webkit-transition: all 0.4s;
     -moz-transition: all 0.4s;
@@ -284,15 +290,6 @@ ul.nav.navbar-nav.navbar-right li a:hover {
     vertical-align: middle;
     zoom: 1;
 }
-
-.blur {
-    -ms-filter: blur(1px);
-    -webkit-filter: blur(1px);
-    -moz-filter: blur(1px);
-    -o-filter: blur(1px);
-    filter: blur(1px);
-}
-
 ol.breadcrumb {
     border-radius: 0;
     position: relative;
@@ -512,7 +509,12 @@ i.fa.fa-step {
 .footer-hr {
     color: #fff;
 }
-
+.form-group.floating-label-form-group.controls label {
+    background-color: #ffffff;
+    padding-left: 2px;
+    padding-right: 2px;
+    border-radius: 2px;
+}
 .thumbnail {
     border-radius: 2px;
     padding: 2px;
@@ -579,8 +581,8 @@ footer ul.list-inline li a {
         }
 
 #map-contact {
-    height: 100%; 
-    width: 100%; 
+    height: calc(100%);
+    width: calc(100%);
     position:absolute; 
     z-index: 0;
 }
@@ -608,4 +610,18 @@ footer ul.list-inline li a {
 }
 #topcontrol i {
     position: fixed; bottom: 16px; right: 20px; cursor: pointer; opacity: 1;
+}
+.alert.alert-success {
+    background-color: #3fad46;
+    color: #fff;
+    margin-bottom: 5px;
+    margin-top: -35px;
+    padding: 5px;
+    border-radius: 3px;
+}
+.alert.alert-danger {
+    padding: 2px;
+    margin-bottom: 8px;
+    margin-top: -20px;
+    border-radius: 2px;
 }

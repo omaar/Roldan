@@ -7,7 +7,8 @@ module.exports = function(grunt) {
           {cwd: 'static/img/', expand: true, src: '**', dest: 'test/static/img'},
           {cwd: 'static/fonts/', expand: true, src: '**', dest: 'test/static/fonts'},
           {cwd: 'static/js/', expand: true, src: ['ui-bootstrap-tpls-0.13.4.min.js','main.js'], dest: 'test/static/js'},
-          {cwd: '/', expand: true, src: ['/robots.txt','/sitemap.xml'], dest: 'test/'}
+          {cwd: '/', expand: true, src: ['/robots.txt','/sitemap.xml'], dest: 'test/'},
+          {cwd: 'static/mail/', expand: true, src: '**', dest: 'test/static/mail'}
         ]
       }
     },
@@ -69,7 +70,9 @@ module.exports = function(grunt) {
           'test/static/js/app.min.js': ['static/js/bootstrap.min.js','static/js/jquery.easing.min.js'
           ,'static/js/scrolling-nav.js','static/js/owl.carousel.min.js','static/js/masterslider.min.js','static/js/app.js'],
           'test/static/js/catalogo.min.js': ['static/js/bootstrap.min.js','static/js/jquery.easing.min.js','static/js/scrolling-nav.js'],
-          'test/static/js/contacto.min.js': ['static/js/jquery.easing.min.js','static/js/scrolling-nav.js','static/js/mapContact.js'],
+          'test/static/js/contacto.min.js': ['static/js/bootstrap.min.js','static/js/jquery.easing.min.js','static/js/scrolling-nav.js'
+          ,'static/js/mapContact.js'],
+          'test/static/js/mail/mail.min.js': ['static/js/mail/jqBootstrapValidation.js','static/js/mail/contact_me.js']
         }
       }
     },
