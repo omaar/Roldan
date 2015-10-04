@@ -16,8 +16,11 @@ include "classes/class.phpmailer.php"; // include the class name
    $mail->Subject = "Nuevo mensaje de: $name";
    $mail->AddAddress("ventas@exhibidoresroldan.com.mx");
    $mail->MsgHTML("<h1>Este es un nuevo mensaje desde el sitio web de Exhibidores Roldan.</h1>\n
-   \n"."<h2>Aqui estan los detalles:</h2>:\n\nNombre: $name\n\nEmail: $email\n
-   \nTelefono: $phone\n\nMensaje:\n$message");
+                  \n"."<h2>Aqui estan los detalles:</h2>:\n
+                  \nNombre: $name\n
+                  \nEmail: $email\n
+                  \nTelefono: $phone\n
+                  \nMensaje:\n$message");
    $send = $mail->Send();
    if($send){ echo 1; }
    else{ echo 0; }
