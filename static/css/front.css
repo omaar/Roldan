@@ -459,13 +459,18 @@ ol.breadcrumb {
 
 .img-owl {
     height: 250px;
+    padding: 5px;
+    border-radius: 5px;
+    width: auto;
 }
 
 .img-modal {
     width: 750px;
     height: auto;
 }
-
+.popular {
+    //height: 250px;
+}
 footer, footer a {
     padding: 50px 0;
     background-color: #EBEBEB;

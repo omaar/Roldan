@@ -12,7 +12,8 @@ angular.module('catalogApp').controller('catalogoController', function ($scope, 
 			    	"CH":"5cm",
 			    	"M":"",
 			    	"G":"30cm"
-			    }
+			    },
+			    "popular":"popular"
 			 },
 			 {  
 			    "id":"Canastilla",
@@ -36,7 +37,8 @@ angular.module('catalogApp').controller('catalogoController', function ($scope, 
 			    	"CH":"20cm, 25cm",
 			    	"M":"29cm, 34cm",
 			    	"G":"39cm"
-			    }
+			    },
+			    "popular":"popular"
 			 },
 			 {  
 			    "id":"Repisa",
@@ -232,19 +234,6 @@ angular.module('catalogApp').controller('catalogoController', function ($scope, 
 			    }
 			 },
 			 {  
-			    "id":"RackRopa",
-			    "nombre":"Rack para ropa",
-			    "descripcion":"Disponible en color Negro",
-			    "img":"../static/img/catalogo/alambre/porta-ropa-circular.png",
-			    "alt":"Rack para ropa",
-			    "medidas": {
-			    	"CH":"",
-			    	"M":"",
-			    	"G":"140cm x 64cm"
-			    },
-			    "popular":".popular"
-			 },
-			 {  
 			    "id":"TarjeteroMostrador",
 			    "nombre":"Tarjetero de mostrador",
 			    "descripcion":"Disponible en color Blanco de Cuatro y Cinco Niveles",
@@ -411,7 +400,8 @@ angular.module('catalogApp').controller('catalogoController', function ($scope, 
 			    	"CH":"17cm x 25cm",
 			    	"M":"",
 			    	"G":""
-			    }
+			    },
+			    "popular":"popular"
 		     },
 		     {  
 		        "nombre":"Porta Lentes con Espejo",
@@ -433,7 +423,8 @@ angular.module('catalogApp').controller('catalogoController', function ($scope, 
 			    	"CH":"70cm x 20cm",
 			    	"M":"",
 			    	"G":"60cm x 19cm"
-			    }
+			    },
+			    "popular":"popular"
 		     },
 		     {  
 		        "nombre":"Porta Teléfono y Tablet",
@@ -507,6 +498,19 @@ angular.module('catalogApp').controller('catalogoController', function ($scope, 
 		     }
 		  ],
 		  "otros":[
+			 {  
+			    "id":"anaquelMetalico",
+			    "nombre":"Anaquel Metalico",
+			    "descripcion":"Disponible en gris y galvanizado",
+			    "img":"../static/img/catalogo/otros/anaquel-metalico.png",
+			    "alt":"Anaquel Metalico",
+			    "medidas": {
+			    	"CH":"30cm x 85cm",
+			    	"M":"45cm x 85cm",
+			    	"G":"60cm x 85cm"
+			    },
+			    "popular":"popular"
+			 },
 		  	 {
 		  		"id": "PortaPapelMadera",
 		  		"nombre":"Porta Papel de Madera",
@@ -519,6 +523,19 @@ angular.module('catalogApp').controller('catalogoController', function ($scope, 
 			    	"G":""
 			    }
 		     },
+			 {  
+			    "id":"RackRopa",
+			    "nombre":"Rack para ropa",
+			    "descripcion":"Disponible en color Negro",
+			    "img":"../static/img/catalogo/otros/rack-ropa.png",
+			    "alt":"Rack para ropa",
+			    "medidas": {
+			    	"CH":"",
+			    	"M":"",
+			    	"G":"140cm x 64cm"
+			    },
+			    "popular":"popular"
+			 },
 		  	 {
 		  		"id": "CarritoMandado",
 		  		"nombre":"Carrito Mandado",
@@ -570,7 +587,7 @@ angular.module('catalogApp').controller('catalogoController', function ($scope, 
 		  ]
 	};
   $scope.open = function (articulo) { var modalInstance = $modal.open({ templateUrl: 'templates/modal.html', controller: 'ModalInstanceCtrl', articulo: articulo, size: 'lg', resolve: { catalogo: function () { return $scope.catalogo; }, articulo: function(){ return articulo; } } }); };
-  $(function() { $('#productos').mixItUp({ load: { filter: '.alambre' } }); });
+  $(function() { $('#productos').mixItUp({ load: { filter: '.popular' } }); });
 });
 angular.module('catalogApp').controller('ModalInstanceCtrl', function ($scope, $modalInstance, catalogo, articulo) {
   $scope.articulo = articulo;

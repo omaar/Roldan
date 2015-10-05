@@ -62,8 +62,8 @@
                         </ol>
                     </div>
                 </div>
-                <article  class="row grid" ng-repeat="(categoria,value) in catalogo">
-                    <figure class="product-item pad col-xs-12 col-sm-6 col-md-4 col-lg-4 mix {{categoria}}" ng-repeat="articulo in value" ng-click="open(articulo)">
+                <div class="row grid" ng-repeat="(categoria,value) in catalogo">
+                    <figure ng-repeat="articulo in value" class="product-item pad col-xs-12 col-sm-6 col-md-4 col-lg-4 mix {{categoria}} {{articulo.popular}}" ng-click="open(articulo)">
                         <a class="product-link thumbnail">
                             <div class="caption">
                                 <div class="caption-product">
@@ -74,7 +74,7 @@
                         </a>
                         <figcaption class="text-center name"><p>{{articulo.nombre}}</p></figcaption>
                     </figure>
-                </article>
+                </div>
             </div>
         </div>
         <a id="topcontrol" class="page-scroll" title="Volver arriba" href="#main"><i class="fa fa-angle-up fa-2x"></i></a>
