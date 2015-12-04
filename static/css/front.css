@@ -639,3 +639,15 @@ footer ul.list-inline li a {
     margin-top: -20px;
     border-radius: 2px;
 }
+.img-circle{
+    border-radius: 50%;
+}
+.slide-title{
+    color: #595959;
+    background: #f4f4f4;
+    padding: 8px;
+    border-radius: 5px;
+}
+#nextel{
+    width: 28px;
+}

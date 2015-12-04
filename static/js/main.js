@@ -586,7 +586,14 @@ angular.module('catalogApp').controller('catalogoController', function ($scope, 
 		     }
 		  ]
 	};
-  $scope.open = function (articulo) { var modalInstance = $modal.open({ templateUrl: 'templates/modal.html', controller: 'ModalInstanceCtrl', articulo: articulo, size: 'lg', resolve: { catalogo: function () { return $scope.catalogo; }, articulo: function(){ return articulo; } } }); };
+  $scope.open = function (articulo) { 
+  	var modalInstance = $modal.open({ 
+  		templateUrl: 'templates/modal.html', 
+  		controller: 'ModalInstanceCtrl', 
+  		articulo: articulo, 
+  		size: 'lg', 
+  		resolve: { catalogo: function () { return $scope.catalogo; }, 
+  		articulo: function(){ return articulo; } } }); };
   $(function() { $('#productos').mixItUp({ load: { filter: '.popular' } }); });
 });
 angular.module('catalogApp').controller('ModalInstanceCtrl', function ($scope, $modalInstance, catalogo, articulo) {

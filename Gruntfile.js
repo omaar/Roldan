@@ -41,7 +41,7 @@ module.exports = function(grunt) {
           compress:true
         },
       files: [
-        { src: '*.html', dest: 'test/css/main.css'}
+        { src: 'contacto.html', dest: 'test/css/contacto.css'}
       ]
       }
     },
@@ -85,14 +85,18 @@ module.exports = function(grunt) {
         files: {                                   // Dictionary of files 
           'test/index.html': 'test/index.html',     // 'destination': 'source' 
           'test/catalogo.html': 'test/catalogo.html',
-          'test/contacto.html': 'test/contacto.html'
+          'test/contacto.html': 'test/contacto.html',
+          'test/templates/steps.html':'templates/steps.html',
+          'test/templates/navbar.html':'templates/navbar.html',
+          'test/templates/footer.html':'templates/footer.html',
+          'test/templates/modal.html':'templates/modal.html'
         }
       }
     }
   });
   // Load the plugins
   grunt.loadNpmTasks('grunt-contrib-copy');
-  //grunt.loadNpmTasks('grunt-uncss');
+  grunt.loadNpmTasks('grunt-uncss');
   grunt.loadNpmTasks('grunt-contrib-cssmin');
   grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.loadNpmTasks('grunt-processhtml');

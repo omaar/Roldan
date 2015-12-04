@@ -12,15 +12,16 @@ include "classes/class.phpmailer.php"; // include the class name
    $mail->SMTPAuth = true;
    $mail->Username = "ventas@exhibidoresroldan.com.mx";
    $mail->Password = "exhibidores.mx65";
-   $mail->SetFrom("ventas@exhibidoresroldan.com.mx","WebSite - Exhibidores Roldan");
+   $mail->SetFrom("ventas@exhibidoresroldan.com.mx","Nuevo Mensaje: $name");
    $mail->Subject = "Nuevo mensaje de: $name";
    $mail->AddAddress("ventas@exhibidoresroldan.com.mx");
-   $mail->MsgHTML("<h1>Este es un nuevo mensaje desde el sitio web de Exhibidores Roldan.</h1>\n
-                  \n"."<h2>Aqui estan los detalles:</h2>:\n
-                  \nNombre: $name\n
-                  \nEmail: $email\n
-                  \nTelefono: $phone\n
-                  \nMensaje:\n$message");
+   $mail->addReplyTo($email, $name);
+   $mail->MsgHTML("<h1>Exhibidores Roldan - Mensaje</h1>
+                  <h2>Aqui estan los detalles:</h2>
+                  <h5>Nombre: <strong> $name</strong></h5>
+                  <p>Email: <strong> $email</strong></p>
+                  <p>Telefono: <strong> $phone</strong></p>
+                  <p>Mensaje: <strong> $message </strong></p>");
    $send = $mail->Send();
    if($send){ echo 1; }
    else{ echo 0; }
