@@ -1,0 +1,10 @@
+User-agent: *
+Disallow: static/css
+Allow: static/js
+Allow: static/img
+Allow: templates/footer.html
+Allow: templates/modal.html
+Allow: templates/navbar.html
+Allow: /catalogo.html
+Allow: /index.html
+Allow: /contacto.html
